@@ -3,5 +3,13 @@
     "familyName": "Berthold",
     "menu": {
         "home": "Home"
+    },
+    "projectRecycMontreal": {
+        "name": "Recyc-Montréal",
+        "type": "Mobile, UX/UI Design",
+        "description": "A waste management app.",
+        "imageUrl": "",
+        "imageAlt": "",
+        "href": ""
     }
 }
