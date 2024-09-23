@@ -1,5 +1,6 @@
 import './Header.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -10,13 +11,17 @@ function Header() {
         <>
             <ul id="header" className='container'>
                 <li>
-                    <a href="/">
-                        {/*<img className="img-logo" src={GBLogo} alt="GB logo" />*/}
+                    <Link to="/">
                         {t('name')}
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    MENU
+                    <nav>
+                        <ul>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/project-recycmontreal">Recyc-Montreal</Link></li>
+                        </ul>
+                    </nav>
                 </li>
             </ul>
         </>
