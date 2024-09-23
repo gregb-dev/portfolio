@@ -1,5 +1,7 @@
-import ProjectCard from '../components/cards/project-card/ProjectCard';
 import { useTranslation } from 'react-i18next';
+import Welcome from '../components/content/welcome/Welcome';
+import Work from '../components/content/work/Work';
+import Contact from '../components/content/contact/Contact';
 
 function Home() {
 
@@ -7,16 +9,9 @@ function Home() {
 
     return (
         <>
-            <div>
-                <ProjectCard
-                    name={t('projectRecycMontreal.name')}
-                    type={t('projectRecycMontreal.type')}
-                    description={t('projectRecycMontreal.description')}
-                    imageUrl={t('projectRecycMontreal.imageUrl')}
-                    imageAlt={t('projectRecycMontreal.imageAlt')}
-                    href={t('projectRecycMontreal.href')}
-                />
-            </div>
+            <Welcome />
+            <Work />
+            <Contact />
         </>
     )
 }

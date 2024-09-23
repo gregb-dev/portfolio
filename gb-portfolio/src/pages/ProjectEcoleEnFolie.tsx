@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next';
 
-function ProjectRecycMontreal() {
+function ProjectEcoleEnFolie() {
 
     const { t } = useTranslation();
 
     return (
         <>
             <div>
-                <h1>Recyc-Montréal</h1>
+                <h1>École en folie</h1>
             </div>
         </>
     )
 }
 
-export default ProjectRecycMontreal;
+export default ProjectEcoleEnFolie;

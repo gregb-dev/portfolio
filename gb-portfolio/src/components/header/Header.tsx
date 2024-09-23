@@ -1,6 +1,8 @@
 import './Header.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import BurgerMenu from '../menus/BurgerMenu';
+
 
 function Header() {
 
@@ -17,10 +19,11 @@ function Header() {
                 </li>
                 <li>
                     <nav>
-                        <ul>
+                        <BurgerMenu />
+                        {/*<ul className="desktop-menu">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/project-recycmontreal">Recyc-Montreal</Link></li>
-                        </ul>
+                        </ul>*/}
                     </nav>
                 </li>
             </ul>

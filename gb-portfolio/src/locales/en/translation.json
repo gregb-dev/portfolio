@@ -2,7 +2,10 @@
     "name": "Greg",
     "familyName": "Berthold",
     "menu": {
-        "home": "Home"
+        "home": "Home",
+        "work": "My work",
+        "about": "About me",
+        "contact": "Connect"
     },
     "projectRecycMontreal": {
         "name": "Recyc-Montréal",
@@ -10,6 +13,14 @@
         "description": "A waste management app.",
         "imageUrl": "",
         "imageAlt": "",
-        "href": ""
+        "href": "/project-recycmontreal"
+    },
+    "projectEcoleEnFolie": {
+        "name": "École en folie",
+        "type": "Web, UX/UI Design",
+        "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
+        "imageUrl": "",
+        "imageAlt": "",
+        "href": "/project-ecoleenfolie"
     }
 }

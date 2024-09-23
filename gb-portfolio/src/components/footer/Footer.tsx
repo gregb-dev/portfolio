@@ -1,16 +1,17 @@
+import './Footer.css';
 import { useTranslation } from 'react-i18next';
 
-function ProjectRecycMontreal() {
+function Footer() {
 
     const { t } = useTranslation();
 
     return (
         <>
-            <div>
-                <h1>Recyc-Montréal</h1>
+            <div id="footer" className='full-height'>
+                Footer
             </div>
         </>
     )
 }
 
-export default ProjectRecycMontreal;
+export default Footer;
