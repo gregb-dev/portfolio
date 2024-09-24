@@ -4,7 +4,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     width: 100%;
     height: auto;
     display: flex;
@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     z-index: 999;*/
-    background-color: var(--site-background-color);
+    background-color: #ebebeb;
 }
 
 .header-name {

@@ -1,5 +1,11 @@
 #welcome {
-    
+    margin-top: -72px;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .container-welcome-details {
@@ -12,9 +18,15 @@
 }
 
 .welcome-name {
-    font-family: Beckman;
+    text-transform: uppercase;
     text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.welcome-title {
+    text-transform: uppercase;
     letter-spacing: 4px;
+    font-size: 1rem;
 }
 
 .container-welcome-logo {
@@ -42,4 +54,26 @@
 .welcome-socials li {
     list-style: none;
     margin: 0 1rem;
+}
+
+.welcome-socials-icons {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.icon-email {
+    background-image: url(../../../assets/logos/google-mail-icon.png);
+}
+
+.icon-github {
+    background-image: url(../../../assets/logos/github-mark.png);
+}
+
+.icon-linkedin {
+    background-image: url(../../../assets/logos/LI-In-Bug.png);
 }

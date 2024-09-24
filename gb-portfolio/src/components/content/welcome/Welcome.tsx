@@ -11,14 +11,14 @@ function Home() {
         <>
             <div id="welcome" className="container-content">
                 <div className="container-welcome-details">
-                    <div className='container-welcome-logo'><img src={GBLogo} alt="Greg Berthold logo" /></div>
+                    {/*<div className='container-welcome-logo'><img src={GBLogo} alt="Greg Berthold logo" /></div>*/}
                     <h2 className='welcome-name'>{t('name')} {t('familyName')}</h2>
-                    <h3 className='welcome-name'>Full-stack developer</h3>
-                    <p>{t('welcomeMessage')}</p>
+                    <p>{t('welcomeMessage1')}</p>
+                    <p>{t('welcomeMessage2')}</p>
                     <ul className="welcome-socials">
-                        <li>Email</li>
-                        <li>GitHub</li>
-                        <li>LinkedIn</li>
+                        <li className='welcome-socials-icons icon-email'></li>
+                        <li className='welcome-socials-icons icon-github'></li>
+                        <li className='welcome-socials-icons icon-linkedin'></li>
                     </ul>
                 </div>
             </div>

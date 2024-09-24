@@ -7,7 +7,8 @@
         "about": "About me",
         "contact": "Connect"
     },
-    "welcomeMessage": "Hi! I'm a full-stack developer based in Greater Montreal. I love creating engaging and innovative experiences for brands and their customers.",
+    "welcomeMessage1": "Hi! I'm a full-stack developer based in Greater Montreal.",
+    "welcomeMessage2": "I love creating engaging and innovative experiences for brands and their customers.",
     "projectRecycMontreal": {
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
