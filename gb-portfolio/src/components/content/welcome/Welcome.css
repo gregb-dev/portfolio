@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    /*min-height: 100vh;*/
 }
 
 .container-welcome-details {

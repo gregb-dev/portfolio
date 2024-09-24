@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Quote.css';
 
@@ -8,14 +8,47 @@ function QuoteWithDelay() {
     const [secondText, setSecondText] = useState('');
     const [index, setIndex] = useState(0);
     const [secondIndex, setSecondIndex] = useState(0);
-    const firstTextContent = t('quote'); // First piece of text
-    const secondTextContent = t('quote'); // Second piece of text
-    const speed = 50; // Speed in milliseconds
+
+    const [fadeIn, setFadeIn] = useState(false); // State for fade-in effect
+
+    const [startTyping, setStartTyping] = useState(false);
+    const textContainerRef = useRef(null);
+
+    const firstTextContent = t('quote.part1'); // First piece of text
+    const secondTextContent = t('quote.part2'); // Second piece of text
+    const speed = 90; // Speed in milliseconds
     const delayBetweenTexts = 1000; // 1 second delay between texts
+
+    const initialDelay = 2000; // Initial delay before typing starts
+
+    // Set up IntersectionObserver to trigger typing effect on scroll
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setFadeIn(true); // Trigger fade-in effect
+                    setTimeout(() => {
+                        setStartTyping(true);
+                    }, initialDelay); // Start typing after initial delay
+                    observer.unobserve(entry.target); // Stop observing once the text starts typing
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (textContainerRef.current) {
+            observer.observe(textContainerRef.current);
+        }
+
+        return () => {
+            if (textContainerRef.current) {
+                observer.unobserve(textContainerRef.current);
+            }
+        };
+    }, []);
 
     // First text typing effect
     useEffect(() => {
-        if (index < firstTextContent.length) {
+        if (startTyping && index < firstTextContent.length) {
             const timeoutId = setTimeout(() => {
                 setFirstText(prev => prev + firstTextContent.charAt(index));
                 setIndex(index + 1);
@@ -23,7 +56,7 @@ function QuoteWithDelay() {
 
             return () => clearTimeout(timeoutId);
         }
-    }, [index, firstTextContent]);
+    }, [index, firstTextContent, startTyping]);
 
     // Second text typing effect with delay
     useEffect(() => {
@@ -48,11 +81,19 @@ function QuoteWithDelay() {
 
     return (
         <div id="quote">
-            <h1 className="typewriter">
-                {firstText}
-                {index === firstTextContent.length && secondIndex > 0 ? secondText : null}
-                <span className="cursor"></span>
-            </h1>
+            <div ref={textContainerRef} className={`text-container ${fadeIn ? 'fade-in' : ''}`}>
+                <h1 className="typewriter">
+                    {firstText}
+                    {index === firstTextContent.length && secondIndex > 0 ? (
+                        <>
+                            <br /> {/* Line break after first text */}
+                            {secondText}
+                        </>
+                    ) : null}
+                    <span className="cursor"></span>
+                </h1>
+            </div>
+
         </div>
     );
 }

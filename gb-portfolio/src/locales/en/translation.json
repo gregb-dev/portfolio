@@ -15,7 +15,10 @@
     },
     "welcomeMessage1": "Hi! I'm a full-stack developer based in Greater Montreal.",
     "welcomeMessage2": "I love creating engaging and innovative experiences for brands and their customers.",
-    "quote": "Design shapes the user's journey; code ensures they reach their destination.",
+    "quote": {
+        "part1": "Design shapes the user's journey; ",
+        "part2": "code ensures they reach their destination."
+    },
     "heading": {
         "work": "My work",
         "workSubheading": "Peak into my latest projects",
