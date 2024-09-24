@@ -8,10 +8,10 @@
 .burger-icon {
     width: 30px;
     cursor: pointer;
-    position: fixed;
-    /* Keep the icon fixed when scrolling and above the menu */
+    position: relative;
+    /*position: fixed;
     top: 20px;
-    right: 20px;
+    right: 20px;*/
     z-index: 20;
     /* Ensure burger icon is above the menu */
 }
@@ -21,6 +21,7 @@
     width: 100%;
     height: 3px;
     background-color: #333;
+    background-color: #000000;
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -46,7 +47,9 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--site-background-color);
     color: white;
+    color: #000000;
     display: none;
     justify-content: center;
     align-items: center;
@@ -72,6 +75,7 @@
 
 .menu ul li a {
     color: white;
+    color: #000000;
     font-size: 24px;
     text-decoration: none;
     transition: color 0.2s;

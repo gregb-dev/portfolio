@@ -2,3 +2,33 @@
     background-color: black;
     color: #ffffff;
 }
+
+/* Main typewriter text */
+.typewriter {
+    font-family: monospace;
+    font-size: 2em;
+    display: inline;
+    /* Text will wrap naturally */
+}
+
+/* Blinking cursor */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    /* Width of the cursor */
+    height: 1em;
+    margin-bottom: 0.5rem;
+    /* Match the height of the font size */
+    background-color: white;
+    /* Color of the cursor */
+    animation: blink 1s step-end infinite;
+    vertical-align: bottom;
+    /* Align cursor with the text */
+}
+
+/* Blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
