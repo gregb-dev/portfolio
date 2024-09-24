@@ -15,24 +15,13 @@ function BurgerMenu() {
     const { t } = useTranslation();
 
     return (
-        <div className="burger-menu">
-            {/* Burger Icon */}
+        <>
             <div className={`burger-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
             </div>
-
-            {/* Drawer Menu */}
-            <div className={`menu-drawer ${isOpen ? 'open' : ''}`}>
-                <ul>
-                    <li><Link to="/">{t('menu.home')}</Link></li>
-                    <li><HashLink smooth to="/#work">{t('menu.work')}</HashLink></li>
-                    <li><Link to="/">{t('menu.about')}</Link></li>
-                    <li><HashLink smooth to="/#contact">{t('menu.contact')}</HashLink></li>
-                </ul>
-            </div>
-        </div>
+        </>
     );
 }
 

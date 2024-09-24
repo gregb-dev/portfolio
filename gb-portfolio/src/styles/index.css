@@ -1,11 +1,34 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* CSS Variables */
+    --primary-color: #ffffff;
+    --secondary-color: #ffffff;
+    --site-background-color: #ffffff;
+    --text-color: #000000;
+    --site-padding: 1rem;
+
+    /* Font import */
+    @font-face {
+        font-family: Libel Suit;
+        src: url(../../assets/fonts/libel-suit-rg.otf);
+    }
+
+    @font-face {
+        font-family: Bebas Kai;
+        src: url(../../assets/fonts/BebasKai.ttf);
+    }
+
+    font-family: Inter,
+    system-ui,
+    Avenir,
+    Helvetica,
+    Arial,
+    sans-serif;
     line-height: 1.5;
     font-weight: 400;
     font-size: 16px;
 
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: var(--text-color);
+    background-color: var(--site-background-color);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -18,21 +41,33 @@
 body {
     margin: 0;
     display: flex;
-    /*place-items: center;*/
+    place-items: center;
     justify-content: center;
     align-items: flex-start;
     min-width: 320px;
     min-height: 100vh;
 }
 
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 #root {
-    /*max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;*/
     text-align: center;
     width: 100%;
 }
 
-.container {
-    padding: 1rem;
+.container-content {
+    margin: 0;
+    border: 0;
+    padding: 2rem;
+    min-height: 100vh;
 }
