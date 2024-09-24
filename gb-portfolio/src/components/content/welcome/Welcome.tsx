@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import GBLogo from '../../../assets/logos/gb-logo.png';
 
-function Home() {
+function Welcome() {
 
     const { t } = useTranslation();
 
@@ -26,4 +26,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Welcome;
