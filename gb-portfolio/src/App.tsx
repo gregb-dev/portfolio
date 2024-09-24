@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import Home from './pages/Home';
 import ProjectRecycMontreal from './pages/ProjectRecycMontreal';
 import ProjectEcoleEnFolie from './pages/ProjectEcoleEnFolie';
+import About from './pages/About';
 // Hooks
 import ScrollToTop from './hooks/ScrollToTop';
 
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/" element={< Home />} />
                     <Route path="/project-recycmontreal" element={< ProjectRecycMontreal />} />
                     <Route path="/project-ecoleenfolie" element={< ProjectEcoleEnFolie />} />
+                    <Route path="/about" element={< About />} />
                 </Routes>
                 <Footer />
             </Router>

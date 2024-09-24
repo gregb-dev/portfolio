@@ -9,9 +9,9 @@ function Socials() {
     return (
         <>
             <ul className="welcome-socials">
-                <li className='welcome-socials-icons icon-email'></li>
-                <li className='welcome-socials-icons icon-github'></li>
-                <li className='welcome-socials-icons icon-linkedin'></li>
+                <li className='welcome-socials-icons icon-email'><a href="mailto:greg.berthold@outlook.com"></a></li>
+                <li className='welcome-socials-icons icon-github'><a href="https://github.com/gregb-dev" target='_blank' rel="external noopener noreferrer"></a></li>
+                <li className='welcome-socials-icons icon-linkedin'><a href="https://www.linkedin.com/in/gregberthold" target='_blank' rel="external noopener noreferrer"></a></li>
             </ul>
         </>
     )

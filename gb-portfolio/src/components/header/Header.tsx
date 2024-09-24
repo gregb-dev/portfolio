@@ -2,7 +2,7 @@ import './Header.css';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import BurgerMenu from '../menus/BurgerMenu';
+import BurgerMenu from '../menus/burger/BurgerMenu';
 
 
 function Header() {

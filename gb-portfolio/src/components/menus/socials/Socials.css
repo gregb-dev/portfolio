@@ -14,6 +14,12 @@
     margin: 0 1rem;
 }
 
+.welcome-socials li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .welcome-socials-icons {
     display: block;
     width: 44px;
