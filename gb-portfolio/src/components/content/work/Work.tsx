@@ -8,7 +8,7 @@ function Work() {
     return (
         <>
             <div id="work" className='full-height'>
-                My Work
+                <h2>{t('heading.work')} | {t('heading.workSubheading')}</h2>
                 <ProjectCard
                     name={t('projectRecycMontreal.name')}
                     type={t('projectRecycMontreal.type')}

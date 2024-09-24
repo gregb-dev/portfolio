@@ -9,8 +9,9 @@
 
 .container-card-project-img {
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
     aspect-ratio: 1 / 1;
     background-color: blanchedalmond;
 }
@@ -27,5 +28,12 @@
 }
 
 .container-card-project-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
     text-align: left;
 }

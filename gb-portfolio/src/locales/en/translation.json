@@ -5,15 +5,33 @@
         "home": "Home",
         "work": "My work",
         "about": "About me",
-        "contact": "Connect"
+        "contact": "Contact",
+        "languages": {
+            "french": "French",
+            "english": "English",
+            "fr": "FR",
+            "en": "EN"
+        }
     },
     "welcomeMessage1": "Hi! I'm a full-stack developer based in Greater Montreal.",
     "welcomeMessage2": "I love creating engaging and innovative experiences for brands and their customers.",
     "quote": "Design shapes the user's journey; code ensures they reach their destination.",
+    "heading": {
+        "work": "My work",
+        "workSubheading": "Peak into my latest projects",
+        "contact": "Contact",
+        "contactSubheading": "Let's connect!"
+    },
+    "contactMessage": "Want to work together or have a question? Reach out. I'm always open for a chat.",
+    "funFact": {
+        "label": "Fun fact",
+        "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."
+    },
+    "copyrights": "© 2024 Greg Berthold. All rights reserved.",
     "projectRecycMontreal": {
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
-        "description": "A waste management app.",
+        "description": "An app that simplifies your waste management by allowing you to easily find collection days for your address.",
         "imageUrl": "",
         "imageAlt": "",
         "href": "/project-recycmontreal"

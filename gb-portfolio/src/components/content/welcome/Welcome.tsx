@@ -2,6 +2,7 @@ import './Welcome.css';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import GBLogo from '../../../assets/logos/gb-logo.png';
+import Socials from '../../menus/socials/Socials';
 
 function Welcome() {
 
@@ -9,17 +10,13 @@ function Welcome() {
 
     return (
         <>
-            <div id="welcome" className="container-content">
+            <div id="welcome">
                 <div className="container-welcome-details">
                     {/*<div className='container-welcome-logo'><img src={GBLogo} alt="Greg Berthold logo" /></div>*/}
-                    <h2 className='welcome-name'>{t('name')} {t('familyName')}</h2>
+                    <h1 className='welcome-name'>{t('name')} {t('familyName')}</h1>
                     <p>{t('welcomeMessage1')}</p>
                     <p>{t('welcomeMessage2')}</p>
-                    <ul className="welcome-socials">
-                        <li className='welcome-socials-icons icon-email'></li>
-                        <li className='welcome-socials-icons icon-github'></li>
-                        <li className='welcome-socials-icons icon-linkedin'></li>
-                    </ul>
+                    <Socials />
                 </div>
             </div>
         </>

@@ -8,7 +8,7 @@ function Quote() {
 
     return (
         <>
-            <div id="quote" className="container-content">
+            <div id="quote">
                 <h1>{t('quote')}</h1>
             </div>
         </>

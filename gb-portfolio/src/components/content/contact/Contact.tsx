@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Socials from '../../menus/socials/Socials';
 
 function Contact() {
 
@@ -7,8 +8,10 @@ function Contact() {
 
     return (
         <>
-            <div id="contact" className='full-height'>
-                Let's connect.
+            <div id="contact">
+                <h2>{t('heading.contact')} | {t('heading.contactSubheading')}</h2>
+                <p>{t('contactMessage')}</p>
+                <Socials />
             </div>
         </>
     )

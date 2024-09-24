@@ -1,0 +1,38 @@
+.welcome-socials {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-socials li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.welcome-socials-icons {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.icon-email {
+    width: 52px;
+    background-image: url(../../../assets/logos/google-mail-icon-black.png);
+}
+
+.icon-github {
+    background-image: url(../../../assets/logos/github-mark-black.png);
+}
+
+.icon-linkedin {
+    background-image: url(../../../assets/logos/linkedin-black.png);
+}
