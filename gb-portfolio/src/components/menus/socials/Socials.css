@@ -22,8 +22,8 @@
 
 .welcome-socials-icons {
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 24px;
+    height: 24px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -31,7 +31,7 @@
 }
 
 .icon-email {
-    width: 52px;
+    width: 28px;
     background-image: url(../../../assets/logos/socials/google-mail-black.png);
 }
 

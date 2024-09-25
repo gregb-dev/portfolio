@@ -13,8 +13,12 @@
             "en": "EN"
         }
     },
-    "welcomeMessage1": "Hi! I'm a full-stack developer based in Greater Montreal.",
-    "welcomeMessage2": "I love creating engaging and innovative experiences for brands and their customers.",
+    "welcomeMessage": {
+        "part1": "Hi!",
+        "part2": "I'm Greg",
+        "part3": "a",
+        "part4": "full-stack developer based in Greater Montreal. I love creating engaging and innovative experiences for brands and their customers."
+    },
     "quote": {
         "part1": "Design shapes the user's journey; ",
         "part2": "code ensures they reach their destination."

@@ -2,7 +2,7 @@
     /* CSS Variables */
     --primary-color: #ffffff;
     --secondary-color: #ffffff;
-    --site-background-color: #ffffff;
+    --site-background-color: #f3f3f3;
     --text-color: #000000;
     --site-padding: 1rem;
 
@@ -13,18 +13,26 @@
     }
 
     @font-face {
-        font-family: Bebas Kai;
-        src: url(../../assets/fonts/BebasKai.ttf);
+        font-family: Urbanist;
+        src: url(../../assets/fonts/Urbanist-VariableFont_wght.ttf);
     }
 
-    font-family: Inter,
+    /*font-family: Inter,
     system-ui,
     Avenir,
     Helvetica,
     Arial,
     sans-serif;
     line-height: 1.5;
+    font-weight: 400;*/
+    font-family: "Urbanist",
+    "Helvetica",
+    "Arial",
+    sans-serif;
     font-weight: 400;
+    line-height: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 16px;
 
     color: var(--text-color);
@@ -66,8 +74,8 @@ p {
 }
 
 .container-content {
-    margin: 0;
-    border: 0;
     padding: 1rem;
-    min-height: 100vh;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Welcome from '../components/content/welcome/Welcome';
 import Work from '../components/content/work/Work';
