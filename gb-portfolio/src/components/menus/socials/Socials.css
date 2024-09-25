@@ -32,13 +32,13 @@
 
 .icon-email {
     width: 52px;
-    background-image: url(../../../assets/logos/google-mail-icon-black.png);
+    background-image: url(../../../assets/logos/socials/google-mail-black.png);
 }
 
 .icon-github {
-    background-image: url(../../../assets/logos/github-mark-black.png);
+    background-image: url(../../../assets/logos/socials/github-mark-black.png);
 }
 
 .icon-linkedin {
-    background-image: url(../../../assets/logos/linkedin-black.png);
+    background-image: url(../../../assets/logos/socials/linkedin-black.png);
 }

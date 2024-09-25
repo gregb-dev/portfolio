@@ -30,23 +30,25 @@ function Header() {
 
     return (
         <>
-            <ul id="header" className={`header ${scrolled ? 'scrolled' : ''}`}>
-                <li>
-                    <p className='header-name'>B</p>
-                    {/*<Link to="/">
+            <div id="header" className={`header ${scrolled ? 'scrolled' : ''}`}>
+                <ul >
+                    <li>
+                        <p className='header-name'>B</p>
+                        {/*<Link to="/">
                         {t('name')}
                     </Link>*/}
-                </li>
-                <li>
-                    <nav>
-                        {<BurgerMenu />}
-                        {/*<ul className="desktop-menu">
+                    </li>
+                    <li>
+                        <nav>
+                            {<BurgerMenu />}
+                            {/*<ul className="desktop-menu">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/project-recycmontreal">Recyc-Montreal</Link></li>
                         </ul>*/}
-                    </nav>
-                </li>
-            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </div>
         </>
     )
 }
