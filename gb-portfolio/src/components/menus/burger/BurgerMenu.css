@@ -1,7 +1,12 @@
+/* curretn z-index :
+    burger-menu: 10
+    burger-icon: 20
+    menu: 5
+*/
+
 .burger-menu {
     position: relative;
     z-index: 10;
-    /* Ensure burger icon is above the menu */
 }
 
 .burger-icon {
@@ -12,7 +17,6 @@
     top: 20px;
     right: 20px;*/
     z-index: 20;
-    /* Ensure burger icon is above the menu */
 }
 
 .burger-icon span {
@@ -54,7 +58,6 @@
     flex-direction: column;
     transition: transform 0.3s ease;
     z-index: 5;
-    /* Menu should be below the burger icon */
 }
 
 .menu.open {

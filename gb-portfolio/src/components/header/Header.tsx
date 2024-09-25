@@ -1,5 +1,5 @@
 import './Header.css';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import BurgerMenu from '../menus/burger/BurgerMenu';
@@ -31,11 +31,11 @@ function Header() {
 
     return (
         <>
-            <div id='header' className={`container-header ${scrolled ? 'scrolled' : ''}`}>
+            <div id='header' className={`header-container ${scrolled ? 'scrolled' : ''}`}>
                 <ul className='header'>
                     <li>
                         <Link to='/'>
-                            <img className='logo-home' src={GBLogo} alt='GB logo' />
+                            <img className='header-logo' src={GBLogo} alt='GB logo' />
                         </Link>
                     </li>
                     <li>

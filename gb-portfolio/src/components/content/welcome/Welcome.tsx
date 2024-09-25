@@ -1,7 +1,6 @@
 import './Welcome.css';
-import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import ArrowDown from '../../buttons/arrow/ArrowDown';
+import ArrowDownButton from '../../buttons/arrow/ArrowDownButton';
 
 function Welcome() {
 
@@ -10,15 +9,15 @@ function Welcome() {
     return (
         <>
             <div id='welcome'>
-                <div className='container-content container-welcome'>
-                    <div className='container-welcome-details'>
-                        <h1 className="heading">
-                            {t('welcomeMessage.part1')} <span className='heading-bold'>{t('welcomeMessage.part2')}</span> — {t('welcomeMessage.part3')}
-                            <br /> {t('welcomeMessage.part4')}
+                <div className='content welcome-container'>
+                    <div className='welcome-card'>
+                        <h1 className='welcome-card-heading'>
+                            {t('welcomeHeading.part1')} <span className='welcome-card-heading-bold'>{t('welcomeHeading.part2')}</span> — {t('welcomeHeading.part3')}
+                            <br /> {t('welcomeHeading.part4')}
                         </h1>
                     </div>
                     <div className='welcome-arrow-down'>
-                        <ArrowDown hastagLink='/#quote' />
+                        <ArrowDownButton hashtagLink='/#quote' />
                     </div>
                 </div>
             </div>

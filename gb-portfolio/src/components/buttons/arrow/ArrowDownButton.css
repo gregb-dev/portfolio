@@ -1,0 +1,208 @@
+.arrow-btn-outline {
+    position: relative;
+    border: 2px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.arrow-container {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.arrow-container .arrow {
+    left: 0;
+    right: 0;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 6px;
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    top: 4px;
+}
+
+.second-arrow {
+    margin-top: 8px;
+}
+
+.arrow-icon {
+    background-image: url(../../../assets/icons/arrow-down.png);
+}
+
+@-webkit-keyframes arrowBounce {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(6px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@-moz-keyframes arrowBounce {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(6px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@-o-keyframes arrowBounce {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(6px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes arrowBounce {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(6px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.bounceAlpha {
+    -webkit-animation-name: arrowBounce;
+    -moz-animation-name: arrowBounce;
+    -o-animation-name: arrowBounce;
+    animation-name: arrowBounce;
+    -webkit-animation-duration: 1.4s;
+    -moz-animation-duration: 1.4s;
+    -o-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.arrow.first-arrow.bounceAlpha {
+    -webkit-animation-name: arrowBounce;
+    -moz-animation-name: arrowBounce;
+    -o-animation-name: arrowBounce;
+    animation-name: arrowBounce;
+    -webkit-animation-duration: 1.4s;
+    -moz-animation-duration: 1.4s;
+    -o-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.arrow-btn-outline .arrow {
+    -webkit-animation-name: arrowBounce;
+    -moz-animation-name: arrowBounce;
+    -o-animation-name: arrowBounce;
+    animation-name: arrowBounce;
+    -webkit-animation-duration: 1.4s;
+    -moz-animation-duration: 1.4s;
+    -o-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.arrow-btn-outline .arrow.first-arrow {
+    -webkit-animation-name: arrowBounce;
+    -moz-animation-name: arrowBounce;
+    -o-animation-name: arrowBounce;
+    animation-name: arrowBounce;
+    -webkit-animation-duration: 1.4s;
+    -moz-animation-duration: 1.4s;
+    -o-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}

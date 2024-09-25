@@ -1,4 +1,4 @@
-.container-header {
+.header-container {
     margin: 0;
     padding: 1rem var(--site-padding, 1rem);
     border: 0;
@@ -25,7 +25,7 @@
     z-index: 999;*/
 }
 
-.logo-home {
+.header-logo {
     display: block;
     width: 88px;
     height: auto;

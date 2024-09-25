@@ -6,18 +6,18 @@
         "work": "My work",
         "about": "About me",
         "contact": "Contact",
-        "languages": {
+        "multiLang": {
             "french": "French",
             "english": "English",
             "fr": "FR",
             "en": "EN"
         }
     },
-    "welcomeMessage": {
+    "welcomeHeading": {
         "part1": "Hi!",
         "part2": "I'm Greg",
         "part3": "a",
-        "part4": "full-stack developer based in Greater Montreal. I love creating engaging and innovative experiences for brands and their customers."
+        "part4": "full-stack developer who loves creating engaging and innovative experiences for brands and their customers."
     },
     "quote": {
         "part1": "Design shapes the user's journey; ",
