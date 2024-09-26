@@ -6,3 +6,8 @@
 .contact-message {
     margin-bottom: 1rem;
 }
+
+.contact-social-links {
+    display: flex;
+    align-items: center;
+}

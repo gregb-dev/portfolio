@@ -25,7 +25,10 @@ function Footer() {
                                 <li>{t('menu.multiLang.french')}</li>
                             </ul>
                         </ul>
-                        <Socials isDarkIcons={false} />
+                        <Socials
+                            isDarkIcons={false}
+                            size='36'
+                        />
                     </div>
                     <div>
                         <p>{t('funFact.label')} : {t('funFact.message')}</p>

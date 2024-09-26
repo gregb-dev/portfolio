@@ -8,6 +8,7 @@ import LinkedinbIconLight from '../../../assets/logos/socials/linkedin-white.png
 
 interface SocialsProps {
     isDarkIcons: boolean
+    size?: string
 }
 
 function Socials(props: SocialsProps) {
@@ -16,22 +17,36 @@ function Socials(props: SocialsProps) {
     const githubIcon = props.isDarkIcons ? GithubIconDark : GithubIconLight;
     const linkedinIcon = props.isDarkIcons ? LinkedinbIconDark : LinkedinbIconLight;
 
+    // Determine the className based on the size prop
+    const sizeClass = (() => {
+        switch (props.size) {
+            case '24':
+                return 'welcome-socials-icon-small';
+            case '36':
+                return 'welcome-socials-icon-medium';
+            case '48':
+                return 'welcome-socials-icon-large';
+            default:
+                return 'welcome-socials-icon-default';
+        }
+    })();
+
     return (
         <>
             <ul className='welcome-socials'>
                 <li>
                     <a href='mailto:greg.berthold@outlook.com'>
-                        <img className='welcome-socials-icon' src={emailIcon} alt='E-mail' />
+                        <img className={`welcome-socials-icon ${sizeClass}`} src={emailIcon} alt='E-mail' />
                     </a>
                 </li>
                 <li>
                     <a href='https://github.com/gregb-dev' target='_blank' rel='external noopener noreferrer'>
-                        <img className='welcome-socials-icon' src={githubIcon} alt='GitHub' />
+                        <img className={`welcome-socials-icon ${sizeClass}`} src={githubIcon} alt='GitHub' />
                     </a>
                 </li>
                 <li>
                     <a href='https://www.linkedin.com/in/gregberthold' target='_blank' rel='external noopener noreferrer'>
-                        <img className='welcome-socials-icon' src={linkedinIcon} alt='LinkedIn' />
+                        <img className={`welcome-socials-icon ${sizeClass}`} src={linkedinIcon} alt='LinkedIn' />
                     </a>
                 </li>
             </ul>

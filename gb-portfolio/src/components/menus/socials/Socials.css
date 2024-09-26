@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -15,7 +16,27 @@
 }
 
 .welcome-socials-icon {
-    display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+    max-width: 100px;
+}
+
+.welcome-socials-icon-small {
+    width: auto;
+    height: 24px;
+}
+
+.welcome-socials-icon-medium {
+    width: auto;
+    height: 36px;
+}
+
+.welcome-socials-icon-large {
+    width: auto;
+    height: 48px;
+}
+
+.welcome-socials-icon-default {
+    width: auto;
+    height: 60px;
 }
