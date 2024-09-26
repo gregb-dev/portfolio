@@ -21,6 +21,7 @@ function Contact() {
                             size='36'
                         />
                     </div>
+                    <p>{t('funFact.label')} : {t('funFact.message')}</p>
                 </div>
             </div>
         </>
