@@ -8,7 +8,7 @@ function Contact() {
 
     return (
         <>
-            <div id="contact">
+            <div id='contact'>
                 <div className='content contact-container'>
                     <h2>{t('headings.contactSubheading')}</h2>
                     <div className='contact-message'>
