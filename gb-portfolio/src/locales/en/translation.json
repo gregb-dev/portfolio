@@ -39,15 +39,14 @@
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
         "description": "An app that simplifies your waste management by allowing you to easily find collection days for your address.",
-        "imageAlt": "",
+        "imageAlt": "Iphone app preview",
         "href": "/project-recycmontreal"
     },
     "projectCardEcoleEnFolie": {
         "name": "École en folie",
         "type": "Web, UX/UI Design",
         "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
-        "imageUrl": "",
-        "imageAlt": "",
+        "imageAlt": "Laptop preview",
         "href": "/project-ecoleenfolie"
     }
 }
