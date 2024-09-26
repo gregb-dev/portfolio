@@ -1,4 +1,4 @@
-/* curretn z-index :
+/* current z-index :
     burger-menu: 10
     burger-icon: 20
     menu: 5
@@ -49,8 +49,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--site-background-color);
-    color: white;
-    color: #000000;
+    color: var(--text-color);
     display: none;
     justify-content: center;
     align-items: center;
@@ -74,15 +73,14 @@
 }
 
 .menu ul li a {
-    color: var(--primartColor);
-    color: var(--secondary-color);
-    font-size: 1rem;
+    font-family: "Urbanist-Semibold";
+    color: var(--text-color);
+    font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.2s;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .menu ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--text-color);
 }

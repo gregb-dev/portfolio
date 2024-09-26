@@ -28,11 +28,12 @@
 
 :root {
     /* CSS Variables */
-    --primary-color: #fefefe;
-    --secondary-color: #373737;
+    --primary-color: #fffffc;
+    --secondary-color: #0c1713;
     --accent-color: #00a5cf;
-    --site-background-color: #fefefe;
-    --text-color: #373737;
+    --site-background-color: #fffffc;
+    --text-color: #0c1713;
+    --white: #fffffc;
     --site-padding: 1rem;
 
     /*font-family: Inter,

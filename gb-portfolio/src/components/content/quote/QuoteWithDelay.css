@@ -13,7 +13,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .quote-code-snippet {
@@ -21,7 +21,7 @@
     font-family: monospace;
     font-size: 1rem;
     text-align: left;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .quote-date {
@@ -60,7 +60,7 @@
 .quote-message {
     font-size: 1.75rem;
     display: inline;
-    word-spacing: -4px;
+    word-spacing: -6px;
 }
 
 /* Blinking cursor */
@@ -71,7 +71,7 @@
     height: 1.75rem;
     /* Match the height of the font size */
     margin-bottom: 4px;
-    background-color: white;
+    background-color: var(--white);
     animation: blink 1s step-end infinite;
     /* Align cursor with the text */
     vertical-align: bottom;
