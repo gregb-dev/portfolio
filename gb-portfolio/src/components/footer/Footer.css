@@ -2,3 +2,18 @@
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+
+.footer-border {
+    margin-top: 3.5rem;
+    border-top: 2px solid var(--primary-color);
+}
+
+.footer-logo {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: -3.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--secondary-color);
+    width: 3rem;
+    height: auto;
+}
