@@ -29,7 +29,10 @@
         "contact": "Contact",
         "contactSubheading": "Let's connect!"
     },
-    "contactMessage": "Want to work together or have a question? Reach out. I'm always open for a chat.",
+    "contactMessage": {
+        "part1": "Want to work together or have a question?",
+        "part2": "Reach out. I'm always open for a chat."
+    },
     "funFact": {
         "label": "Fun fact",
         "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."

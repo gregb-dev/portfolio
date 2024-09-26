@@ -11,7 +11,10 @@ function Contact() {
             <div id="contact">
                 <div className='content contact-container'>
                     <h2>{t('headings.contactSubheading')}</h2>
-                    <p>{t('contactMessage')}</p>
+                    <div className='contact-message'>
+                        <p>{t('contactMessage.part1')}</p>
+                        <p>{t('contactMessage.part2')}</p>
+                    </div>
                     <Socials />
                 </div>
             </div>

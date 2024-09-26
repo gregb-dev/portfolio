@@ -111,6 +111,7 @@
 }
 
 .project-card-heading {
+    margin-bottom: 0;
     font-family: "Urbanist-Semibold";
     font-size: 1.5rem;
     text-transform: uppercase;
