@@ -1,21 +1,39 @@
+@font-face {
+    font-family: Urbanist-Regular;
+    src: url(../assets/fonts/Urbanist-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Urbanist-Medium;
+    src: url(../assets/fonts/Urbanist-VariableFont_wght.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Urbanist-SemiBold;
+    src: url(../assets/fonts/Urbanist-VariableFont_wght.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Urbanist-Bold;
+    src: url(../assets/fonts/Urbanist-VariableFont_wght.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     /* CSS Variables */
-    --primary-color: #ffffff;
-    --secondary-color: #ffffff;
-    --site-background-color: #f3f3f3;
-    --text-color: #000000;
+    --primary-color: #fefefe;
+    --secondary-color: #373737;
+    --accent-color: #00a5cf;
+    --site-background-color: #fefefe;
+    --text-color: #373737;
     --site-padding: 1rem;
-
-    /* Font import */
-    @font-face {
-        font-family: Libel Suit;
-        src: url(../../assets/fonts/libel-suit-rg.otf);
-    }
-
-    @font-face {
-        font-family: Urbanist;
-        src: url(../../assets/fonts/Urbanist-VariableFont_wght.ttf);
-    }
 
     /*font-family: Inter,
     system-ui,
@@ -25,14 +43,12 @@
     sans-serif;
     line-height: 1.5;
     font-weight: 400;*/
-    font-family: "Urbanist",
-    "Helvetica",
-    "Arial",
-    sans-serif;
-    font-weight: 400;
-    line-height: normal;
+    font-family: "Urbanist-Regular",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    line-height: 1.3;
     font-optical-sizing: auto;
-    font-style: normal;
     font-size: 16px;
 
     color: var(--text-color);
@@ -44,6 +60,10 @@
     -moz-osx-font-smoothing: grayscale;
 
     scroll-behavior: smooth;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -54,6 +74,9 @@ body {
     align-items: flex-start;
     min-width: 320px;
     min-height: 100vh;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul,
@@ -74,7 +97,7 @@ p {
 }
 
 .content {
-    padding: 1rem;
+    padding: 2rem 1rem;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
