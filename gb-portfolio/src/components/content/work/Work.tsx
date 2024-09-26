@@ -13,7 +13,8 @@ function Work() {
         <>
             <div id='work'>
                 <div className='content work-container'>
-                    <h2 className='subheading'><span className='subheading-bold'>{t('headings.work')}</span> | {t('headings.workSubheading')}</h2>
+                    <h1 className='heading'>{t('headings.work')}</h1>
+                    <h2 className='subheading'>{t('headings.workSubheading')}</h2>
                     <div className='projects-layout'>
                         <div className='project-card-container'>
                             <ProjectCard

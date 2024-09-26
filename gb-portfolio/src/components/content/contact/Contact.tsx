@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import './Contact.css'
 import { useTranslation } from 'react-i18next';
 import Socials from '../../menus/socials/Socials';
 
@@ -9,9 +9,11 @@ function Contact() {
     return (
         <>
             <div id="contact">
-                <h2>{t('heading.contact')} | {t('heading.contactSubheading')}</h2>
-                <p>{t('contactMessage')}</p>
-                <Socials />
+                <div className='content contact-container'>
+                    <h2>{t('headings.contactSubheading')}</h2>
+                    <p>{t('contactMessage')}</p>
+                    <Socials />
+                </div>
             </div>
         </>
     )

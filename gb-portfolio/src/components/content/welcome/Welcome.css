@@ -23,10 +23,8 @@
 }
 
 .welcome-card-heading {
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: "Urbanist-Regular", sans-serif;
     text-align: left;
-    font-size: 1.75rem;
 }
 
 .welcome-card-heading-bold {

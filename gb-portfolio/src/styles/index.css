@@ -91,6 +91,21 @@ p {
     border: 0;
 }
 
+h1 {
+    font-size: 1.75rem;
+    font-family: "Urbanist-Bold", sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Urbanist-Semibold", sans-serif;
+}
+
+h3 {
+    font-family: "Urbanist-Semibold", sans-serif;
+    font-size: 1.25rem;
+}
+
 #root {
     margin: 0 auto;
     text-align: center;
