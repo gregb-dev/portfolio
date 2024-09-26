@@ -6,9 +6,10 @@ interface ProjectCardProps {
     type: string,
     description: string,
     imageUrl1: string,
-    imageUrl2: string,
+    imageUrl2?: string,
     imageAlt: string,
     href: string
+    case: string
 }
 
 function ProjectCard(props: ProjectCardProps) {
@@ -17,14 +18,23 @@ function ProjectCard(props: ProjectCardProps) {
             <div className='project-card'>
                 <Link to={props.href}>
                     <div className='img-square-box'>
-                        <div className='project-card-img-container'>
-                            <div className='iphone'>
-                                <img className='iphone-img' src={props.imageUrl1} alt={props.imageAlt} />
+                        {props.case === 'mobile' && (
+                            <div className='project-card-img-container'>
+                                <div className='iphone'>
+                                    <img className='device-img' src={props.imageUrl1} alt={props.imageAlt} />
+                                </div>
+                                <div className='iphone iphone-lower'>
+                                    <img className='device-img' src={props.imageUrl2} alt={props.imageAlt} />
+                                </div>
                             </div>
-                            <div className='iphone iphone-lower'>
-                                <img className='iphone-img' src={props.imageUrl2} alt={props.imageAlt} />
+                        )}
+                        {props.case === 'web' && (
+                            <div className='project-card-img-container'>
+                                <div className='laptop'>
+                                    <img className='device-img' src={props.imageUrl1} alt={props.imageAlt} />
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </Link>
                 <div className='project-card-text-container'>
