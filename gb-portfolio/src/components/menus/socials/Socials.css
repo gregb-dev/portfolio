@@ -14,31 +14,8 @@
     margin: 0 1rem;
 }
 
-.welcome-socials li a {
+.welcome-socials-icon {
     display: block;
     width: 100%;
-    height: 100%;
-}
-
-.welcome-socials-icons {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
-}
-
-.icon-email {
-    width: 28px;
-    background-image: url(../../../assets/logos/socials/google-mail-black.png);
-}
-
-.icon-github {
-    background-image: url(../../../assets/logos/socials/github-mark-black.png);
-}
-
-.icon-linkedin {
-    background-image: url(../../../assets/logos/socials/linkedin-black.png);
+    height: auto;
 }
