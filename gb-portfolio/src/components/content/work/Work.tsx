@@ -15,13 +15,13 @@ function Work() {
                     <h2 className='subheading'><span className='subheading-bold'>{t('headings.work')}</span> | {t('headings.workSubheading')}</h2>
                     <div>
                         <ProjectCard
-                            name={t('projectRecycMontreal.name')}
-                            type={t('projectRecycMontreal.type')}
-                            description={t('projectRecycMontreal.description')}
+                            name={t('projectCardRecycMontreal.name')}
+                            type={t('projectCardRecycMontreal.type')}
+                            description={t('projectCardRecycMontreal.description')}
                             imageUrl1={RecycMontrealMockup01}
                             imageUrl2={RecycMontrealMockup02}
-                            imageAlt={t('projectRecycMontreal.imageAlt')}
-                            href={t('projectRecycMontreal.href')}
+                            imageAlt={t('projectCardRecycMontreal.imageAlt')}
+                            href={t('projectCardRecycMontreal.href')}
                         />
                     </div>
 

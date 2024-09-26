@@ -16,22 +16,24 @@ function ProjectCard(props: ProjectCardProps) {
         <>
             <div className='project-card'>
                 <Link to={props.href}>
-                    <div className='project-card-img-container'>
-                        <div className='iphone'>
-                            <img className='iphone-img' src={props.imageUrl1} alt={props.imageAlt} />
-                        </div>
-                        <div className='iphone iphone-lower'>
-                            <img className='iphone-img' src={props.imageUrl2} alt={props.imageAlt} />
+                    <div className='img-square-box'>
+                        <div className='project-card-img-container'>
+                            <div className='iphone'>
+                                <img className='iphone-img' src={props.imageUrl1} alt={props.imageAlt} />
+                            </div>
+                            <div className='iphone iphone-lower'>
+                                <img className='iphone-img' src={props.imageUrl2} alt={props.imageAlt} />
+                            </div>
                         </div>
                     </div>
                 </Link>
-                {/*<div className='container-card-project-text'>
+                <div className='project-card-text-container'>
                     <Link to={props.href}>
-                        <h3>{props.name}</h3>
+                        <h3 className='project-card-heading'>{props.name}</h3>
                     </Link>
-                    <p>{props.type}</p>
-                    <p>{props.description}</p>
-                </div>*/}
+                    <p className='project-card-type'>{props.type}</p>
+                    <p className='project-card-description'>{props.description}</p>
+                </div>
             </div>
         </>
     )
