@@ -1,0 +1,14 @@
+.subheading {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.subheading-bold {
+    font-family: "Urbanist-Bold", sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}

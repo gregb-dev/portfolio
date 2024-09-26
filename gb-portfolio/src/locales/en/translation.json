@@ -23,9 +23,9 @@
         "part1": "Design shapes the user's journey; ",
         "part2": "code ensures they reach their destination."
     },
-    "heading": {
+    "headings": {
         "work": "My work",
-        "workSubheading": "Peak into my latest projects",
+        "workSubheading": "Latest projects",
         "contact": "Contact",
         "contactSubheading": "Let's connect!"
     },
@@ -35,15 +35,14 @@
         "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."
     },
     "copyrights": "© 2024 Greg Berthold. All rights reserved.",
-    "projectRecycMontreal": {
+    "projectCardRecycMontreal": {
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
         "description": "An app that simplifies your waste management by allowing you to easily find collection days for your address.",
-        "imageUrl": "",
         "imageAlt": "",
         "href": "/project-recycmontreal"
     },
-    "projectEcoleEnFolie": {
+    "projectCardEcoleEnFolie": {
         "name": "École en folie",
         "type": "Web, UX/UI Design",
         "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",

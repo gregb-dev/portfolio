@@ -1,8 +1,10 @@
 .welcome-container {
-    /* height of header */
-    margin-top: -92px;
+    /* remove height of header */
     width: 100%;
-    height: 100vh;
+    height: -webkit-calc(100vh - 85px);
+    height: -moz-calc(100vh - 85px);
+    height: -o-calc(100vh - 85px);
+    height: calc(100vh - 85px);
     background-color: var(--site-background);
     display: flex;
     flex-direction: column;
@@ -21,8 +23,6 @@
 }
 
 .welcome-card-heading {
-    line-height: normal;
-    font-weight: 400;
     font-optical-sizing: auto;
     font-style: normal;
     text-align: left;
@@ -30,7 +30,7 @@
 }
 
 .welcome-card-heading-bold {
-    font-weight: 600;
+    font-family: "Urbanist-Semibold";
 }
 
 .welcome-arrow-down {

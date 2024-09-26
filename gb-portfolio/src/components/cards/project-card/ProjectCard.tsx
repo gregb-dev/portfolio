@@ -5,7 +5,8 @@ interface ProjectCardProps {
     name: string,
     type: string,
     description: string,
-    imageUrl: string,
+    imageUrl1: string,
+    imageUrl2: string,
     imageAlt: string,
     href: string
 }
@@ -13,21 +14,24 @@ interface ProjectCardProps {
 function ProjectCard(props: ProjectCardProps) {
     return (
         <>
-            <div className='container-card-project'>
-                <div className='card-project'>
-                    <Link to={props.href}>
-                        <div className='container-card-project-img'>
-                            <img className="card-project-img" src={props.imageUrl} alt={props.imageAlt} />
+            <div className='project-card'>
+                <Link to={props.href}>
+                    <div className='project-card-img-container'>
+                        <div className='iphone'>
+                            <img className='iphone-img' src={props.imageUrl1} alt={props.imageAlt} />
                         </div>
-                    </Link>
-                    <div className='container-card-project-text'>
-                        <Link to={props.href}>
-                            <h3>{props.name}</h3>
-                        </Link>
-                        <p>{props.type}</p>
-                        <p>{props.description}</p>
+                        <div className='iphone iphone-lower'>
+                            <img className='iphone-img' src={props.imageUrl2} alt={props.imageAlt} />
+                        </div>
                     </div>
-                </div>
+                </Link>
+                {/*<div className='container-card-project-text'>
+                    <Link to={props.href}>
+                        <h3>{props.name}</h3>
+                    </Link>
+                    <p>{props.type}</p>
+                    <p>{props.description}</p>
+                </div>*/}
             </div>
         </>
     )
