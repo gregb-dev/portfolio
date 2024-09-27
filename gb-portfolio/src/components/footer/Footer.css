@@ -72,3 +72,17 @@
 .footer-multilang-btn {
     cursor: pointer;
 }
+
+.footer-nav-item,
+.footer-nav-socials .welcome-socials li {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+}
+
+.footer-nav-item:hover,
+.footer-nav-socials .welcome-socials li:hover {
+    opacity: 0.7;
+}

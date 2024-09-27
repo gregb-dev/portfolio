@@ -23,24 +23,26 @@ function Footer() {
                             <div className='footer-nav'>
                                 <ul className='footer-nav-section footer-nav-site'>
                                     <li className='footer-label'>{t('footerLabels.navigation')}</li>
-                                    <li><HashLink smooth to='/#root'>{t('menu.home')}</HashLink></li>
-                                    <li><HashLink smooth to='/#work'>{t('menu.work')}</HashLink></li>
-                                    <li><Link to='/about'>{t('menu.about')}</Link></li>
-                                    <li><HashLink smooth to="/#contact">{t('menu.contact')}</HashLink></li>
+                                    <li className='footer-nav-item'><HashLink smooth to='/#root'>{t('menu.home')}</HashLink></li>
+                                    <li className='footer-nav-item'><HashLink smooth to='/#work'>{t('menu.work')}</HashLink></li>
+                                    <li className='footer-nav-item'><Link to='/about'>{t('menu.about')}</Link></li>
+                                    <li className='footer-nav-item'><HashLink smooth to="/#contact">{t('menu.contact')}</HashLink></li>
                                 </ul>
                                 <div className='footer-nav-section footer-nav-socials'>
                                     <ul>
                                         <li className='footer-label'>{t('footerLabels.socials')}</li>
-                                        <li><Socials
-                                            isDarkIcons={false}
-                                            size='24'
-                                        /></li>
+                                        <li>
+                                            <Socials
+                                                isDarkIcons={false}
+                                                size='24'
+                                            />
+                                        </li>
                                     </ul>
                                 </div>
                                 <ul className='footer-nav-section footer-nav-multilang'>
                                     <li className='footer-label'>{t('footerLabels.multiLang')}</li>
-                                    <li className='footer-multilang-btn' onClick={() => changeLanguage('en')}>{t('menu.multiLang.english')}</li>
-                                    <li className='footer-multilang-btn' onClick={() => changeLanguage('fr')}>{t('menu.multiLang.french')}</li>
+                                    <li className='footer-multilang-btn footer-nav-item' onClick={() => changeLanguage('en')}>{t('menu.multiLang.english')}</li>
+                                    <li className='footer-multilang-btn footer-nav-item' onClick={() => changeLanguage('fr')}>{t('menu.multiLang.french')}</li>
                                 </ul>
                             </div>
                             <div>

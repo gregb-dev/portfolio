@@ -75,7 +75,7 @@
 }
 
 .burger-menu-logo {
-    width: 32px;
+    width: 28px;
     height: auto;
 }
 
@@ -106,7 +106,7 @@
 .menu ul li a {
     font-family: "Urbanist-Medium";
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: color 0.2s;
     text-transform: uppercase;

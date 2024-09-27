@@ -18,7 +18,7 @@ function Header() {
         i18n.changeLanguage(newLang);
     };
 
-    const isActive = (path) => {
+    const isActive = (path: string) => {
         return location.pathname === path || location.hash === path;
     };
 

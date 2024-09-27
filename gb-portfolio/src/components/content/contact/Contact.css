@@ -17,6 +17,18 @@
     align-items: center;
 }
 
+.contact-social-links .welcome-socials li {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+}
+
+.contact-social-links .welcome-socials li:hover {
+    opacity: 0.7;
+}
+
 .contact-fun-fact-heading {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
