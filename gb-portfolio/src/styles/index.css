@@ -117,3 +117,8 @@ h3 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* no scroll for when burger menu is open */
+.no-scroll {
+    overflow: hidden;
+}

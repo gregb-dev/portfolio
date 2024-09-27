@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import GBLogo from '../../../assets/logos/gb/gb-logomark.svg';
 
 function BurgerMenu() {
 
@@ -12,6 +13,12 @@ function BurgerMenu() {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+
+        if (!isOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
     };
 
     return (
@@ -23,15 +30,16 @@ function BurgerMenu() {
                     <span></span>
                 </div>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
-                    <ul>
+                    <ul className='burger-menu-open'>
+                        <li><img className='burger-menu-logo' src={GBLogo} alt='GB logo' /></li>
                         <li><HashLink smooth to='/#root' onClick={toggleMenu}>{t('menu.home')}</HashLink></li>
                         <li><HashLink smooth to='/#work' onClick={toggleMenu}>{t('menu.work')}</HashLink></li>
                         <li><Link to='/about' onClick={toggleMenu}>{t('menu.about')}</Link></li>
                         <li><HashLink smooth to="/#contact" onClick={toggleMenu}>{t('menu.contact')}</HashLink></li>
-                        <ul>
-                            <li>{t('menu.multiLang.english')}</li>
-                            <li>{t('menu.multiLang.french')}</li>
-                        </ul>
+                    </ul>
+                    <ul className='burger-menu-multilang'>
+                        <li>{t('menu.multiLang.english')}</li>
+                        <li>{t('menu.multiLang.french')}</li>
                     </ul>
                 </nav>
             </div>
