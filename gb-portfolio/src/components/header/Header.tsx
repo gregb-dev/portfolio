@@ -9,9 +9,14 @@ import GBLogo from '../../assets/logos/gb/gb-logo-full.svg';
 function Header() {
 
     // Hook useTranslation from i18n in order to translate the text for our locale.
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const location = useLocation();
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'en' ? 'fr' : 'en';
+        i18n.changeLanguage(newLang);
+    };
 
     const isActive = (path) => {
         return location.pathname === path || location.hash === path;
@@ -66,7 +71,10 @@ function Header() {
                                     {t('menu.about')}
                                 </Link>
                                 </li>
-                                <li><HashLink smooth to="/#contact">{t('menu.contact')}</HashLink></li>
+                                <li id='header-desktop-menu-last-item'><HashLink smooth to='/#contact'>{t('menu.contact')}</HashLink></li>
+                                <ul className='header-multilang-menu'>
+                                    <li onClick={toggleLanguage}>{i18n.language === 'en' ? t('menu.multiLang.fr') : t('menu.multiLang.en')}</li>
+                                </ul>
                             </ul>
                         </nav>
                     </li>

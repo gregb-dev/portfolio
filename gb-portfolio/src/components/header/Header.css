@@ -56,7 +56,18 @@
     margin-left: 1rem;
 }
 
+.header-desktop-menu li:hover {
+    color: var(--secondary-color);
+    margin-left: 1rem;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
 .header-desktop-menu li a {
+    padding-left: 4px;
+    padding-right: 4px;
     color: var(--secondary-color);
     font-family: "Urbanist-Medium";
     font-size: 1rem;
@@ -77,6 +88,20 @@
 .header-desktop-menu li a.active-link {
     padding-bottom: 2px;
     border-bottom: 2px solid var(--accent-color);
+}
+
+#header-desktop-menu-last-item {
+    margin-right: 1rem;
+}
+
+.header-multilang-menu {
+    border-left: 1px solid #dddddd;
+    font-family: "Urbanist-Bold";
+    color: var(--accent-color);
+}
+
+.header-multilang-menu {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
