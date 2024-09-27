@@ -130,3 +130,8 @@
     display: inline-block;
     position: relative;
 }
+
+.warning-message {
+    font-family: "Urbanist-Semibold";
+    margin-top: 0.5rem;
+}

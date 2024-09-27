@@ -1,4 +1,5 @@
 import './ProjectCard.css';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
@@ -10,9 +11,15 @@ interface ProjectCardProps {
     imageAlt: string,
     href: string
     case: string
+    isProtected: boolean
 }
 
 function ProjectCard(props: ProjectCardProps) {
+
+    const { t } = useTranslation();
+
+    const isProtected = props.isProtected ? '' : ' hide-warning';
+
     return (
         <>
             <div className='project-card'>
@@ -43,6 +50,7 @@ function ProjectCard(props: ProjectCardProps) {
                     </Link>
                     <p className='project-card-type'>{props.type}</p>
                     <p className='project-card-description'>{props.description}</p>
+                    <p className={`warning-message${isProtected}`}>{t('projectWarning')}</p>
                 </div>
             </div>
         </>

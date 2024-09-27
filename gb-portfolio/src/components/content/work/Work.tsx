@@ -26,6 +26,7 @@ function Work() {
                                 imageAlt={t('projectCardRecycMontreal.imageAlt')}
                                 href={t('projectCardRecycMontreal.href')}
                                 case='mobile'
+                                isProtected={true}
                             />
                         </div>
                         <div className='project-card-container'>
@@ -35,8 +36,9 @@ function Work() {
                                 description={t('projectCardEcoleEnFolie.description')}
                                 imageUrl1={EcoleEnFolieMockup}
                                 imageAlt={t('projectCardEcoleEnFolie.imageAlt')}
-                                href={t('projectEcoleEnFolie.href')}
+                                href={t('projectCardEcoleEnFolie.href')}
                                 case='web'
+                                isProtected={true}
                             />
                         </div>
                     </div>

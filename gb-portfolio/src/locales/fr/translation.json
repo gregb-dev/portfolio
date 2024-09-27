@@ -42,19 +42,20 @@
         "type": "Mobile, UX/UI Design",
         "description": "An app that simplifies your waste management by allowing you to easily find collection days for your address.",
         "imageAlt": "Iphone app preview",
-        "href": "/project-recycmontreal"
+        "href": "/"
     },
     "projectCardEcoleEnFolie": {
         "name": "École en folie",
         "type": "Web, UI Design",
         "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
         "imageAlt": "Laptop preview",
-        "href": "/project-ecoleenfolie"
+        "href": "/"
     },
     "footerLabels": {
         "navigation": "Site",
         "socials": "Socials",
         "multiLang": "Langue"
     },
-    "copyrights": "© 2024 Greg Berthold"
+    "copyrights": "© 2024 Greg Berthold",
+    "projectWarning": "Please get in touch with me for details about this project."
 }
