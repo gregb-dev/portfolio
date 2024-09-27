@@ -42,9 +42,52 @@
     text-decoration: none;
 }
 
+
+.header-desktop-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-desktop-menu li {
+    margin-left: 1rem;
+}
+
+.header-desktop-menu li a {
+    color: var(--secondary-color);
+    font-family: "Urbanist-Medium";
+    font-size: 1rem;
+    cursor: pointer;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--site-background-color);
+    -webkit-transition: border-bottom 0.3s ease;
+    -moz-transition: border-bottom 0.3s ease;
+    -o-transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease;
+}
+
+.header-desktop-menu li a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.header-desktop-menu li a.active-link {
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
 /* MEDIA QUERIES */
 
 /* Laptops will have bigger logo and burger menu will vanish */
+@media (max-width: 768px) {
+    .header-desktop-menu {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .header-container {
         padding: 1rem 2rem;
@@ -53,15 +96,16 @@
     .header-logo {
         width: 100px;
     }
+
+    .header-burger-menu {
+        display: none;
+    }
+
+    .header-desktop-menu {
+        display: flex;
+    }
 }
 
 /*.scrolled {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}*/
-
-/* Hide the desktop menu on smaller screens */
-/*@media (max-width: 768px) {
-    .desktop-menu {
-        display: none;
-    }
 }*/
