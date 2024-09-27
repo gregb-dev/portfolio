@@ -1,5 +1,7 @@
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Socials from '../menus/socials/Socials';
 import FooterLogo from '../../assets/logos/gb/gb-logomark-white.svg';
 
@@ -15,26 +17,31 @@ function Footer() {
                         <img className='footer-logo' src={FooterLogo} alt='Gb Logo' />
                         <div className='footer'>
                             <div className='footer-nav'>
-                                <ul className='footer-nav-site'>
-                                    <li>{t('menu.home')}</li>
-                                    <li>{t('menu.work')}</li>
-                                    <li>{t('menu.about')}</li>
-                                    <li>{t('menu.contact')}</li>
+                                <ul className='footer-nav-section footer-nav-site'>
+                                    <li className='footer-label'>{t('footerLabels.navigation')}</li>
+                                    <li><HashLink smooth to='/#root'>{t('menu.home')}</HashLink></li>
+                                    <li><HashLink smooth to='/#work'>{t('menu.work')}</HashLink></li>
+                                    <li><Link to='/about'>{t('menu.about')}</Link></li>
+                                    <li><HashLink smooth to="/#contact">{t('menu.contact')}</HashLink></li>
                                 </ul>
-                                <div className='footer-nav-socials'>
-                                    <Socials
-                                        isDarkIcons={false}
-                                        size='36'
-                                    />
+                                <div className='footer-nav-section footer-nav-socials'>
+                                    <ul>
+                                        <li className='footer-label'>{t('footerLabels.socials')}</li>
+                                        <li><Socials
+                                            isDarkIcons={false}
+                                            size='24'
+                                        /></li>
+                                    </ul>
                                 </div>
-                                <ul className='footer-nav-multilang'>
+                                <ul className='footer-nav-section footer-nav-multilang'>
+                                    <li className='footer-label'>{t('footerLabels.multiLang')}</li>
                                     <li>{t('menu.multiLang.english')}</li>
                                     <li>{t('menu.multiLang.french')}</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div>
-                            <p>{t('copyrights')}</p>
+                            <div>
+                                <p className='footer-copyrights'>{t('copyrights')}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

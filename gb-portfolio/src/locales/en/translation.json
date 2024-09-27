@@ -37,7 +37,6 @@
         "label": "Fun fact",
         "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."
     },
-    "copyrights": "© 2024 Greg Berthold. All rights reserved.",
     "projectCardRecycMontreal": {
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
@@ -51,5 +50,11 @@
         "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
         "imageAlt": "Laptop preview",
         "href": "/project-ecoleenfolie"
-    }
+    },
+    "footerLabels": {
+        "navigation": "Site",
+        "socials": "Socials",
+        "multiLang": "Language"
+    },
+    "copyrights": "© 2024 Greg Berthold"
 }
