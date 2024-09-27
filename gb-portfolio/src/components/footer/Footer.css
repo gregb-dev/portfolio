@@ -43,6 +43,11 @@
     margin-bottom: 1rem;
     min-width: 287px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-nav ul li {
@@ -56,7 +61,7 @@
 }
 
 .footer-label {
-    color: #656565;
+    color: var(--gray);
 }
 
 .footer-copyrights {

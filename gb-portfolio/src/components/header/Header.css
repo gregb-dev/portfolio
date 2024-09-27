@@ -1,8 +1,6 @@
 .header-container {
     margin: 0;
     padding: 1rem var(--site-padding, 1rem);
-    /*border: 0;
-    border-top: 3px solid var(--secondary-color);*/
     width: 100%;
     height: auto;
     -moz-box-sizing: border-box;

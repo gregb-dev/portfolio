@@ -14,8 +14,8 @@
         }
     },
     "welcomeHeading": {
-        "part1": "Hi!",
-        "part2": "I'm Greg",
+        "part1": "Hi! I'm ",
+        "part2": "Greg",
         "part3": "a",
         "part4": "full-stack developer who loves creating engaging and innovative experiences for brands and their customers."
     },
@@ -34,7 +34,7 @@
         "part2": "Reach out. I'm always open for a chat."
     },
     "funFact": {
-        "label": "Fun fact",
+        "label": "*** Fun fact ***",
         "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."
     },
     "projectCardRecycMontreal": {
@@ -46,7 +46,7 @@
     },
     "projectCardEcoleEnFolie": {
         "name": "École en folie",
-        "type": "Web, UX/UI Design",
+        "type": "Web, UI Design",
         "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
         "imageAlt": "Laptop preview",
         "href": "/project-ecoleenfolie"

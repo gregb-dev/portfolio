@@ -29,6 +29,7 @@
 
 .welcome-card-heading-bold {
     font-family: "Urbanist-Semibold";
+    color: var(--accent-color);
 }
 
 .welcome-arrow-down {

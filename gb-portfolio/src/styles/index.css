@@ -30,21 +30,17 @@
     /* CSS Variables */
     --primary-color: #fffffc;
     --secondary-color: #0c1713;
-    --accent-color: #00a5cf;
+    --accent-color: #226ce0;
+    --accent-color-alt: #43c59e;
+    --pop-color: #f19a3e;
     --site-background-color: #fffffc;
     --text-color: #0c1713;
     --white: #fffffc;
+    --gray: #696969;
     --site-padding: 1rem;
 
-    /*font-family: Inter,
-    system-ui,
-    Avenir,
-    Helvetica,
-    Arial,
-    sans-serif;
-    line-height: 1.5;
-    font-weight: 400;*/
     font-family: "Urbanist-Regular",
+        system-ui,
         "Helvetica",
         "Arial",
         sans-serif;

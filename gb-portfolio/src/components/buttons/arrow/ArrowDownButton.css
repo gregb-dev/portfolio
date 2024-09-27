@@ -1,6 +1,6 @@
 .arrow-btn-outline {
     position: relative;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--accent-color);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -32,7 +32,7 @@
 }
 
 .arrow-icon {
-    background-image: url(../../../assets/icons/arrow-down.png);
+    background-image: url(../../../assets/icons/arrow-down-accent.png);
 }
 
 @-webkit-keyframes arrowBounce {

@@ -4,10 +4,17 @@
 }
 
 .contact-message {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contact-social-links {
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
+}
+
+.contact-fun-fact-heading {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--pop-color);
 }

@@ -28,16 +28,20 @@
     width: 100%;
     height: auto;
     text-align: left;
+    font-size: 1.5rem;
+    color: var(--gray);
 }
 
 .quote-author {
+    font-size: 1.5rem;
     width: 100%;
     height: auto;
     text-align: right;
+    color: var(--white);
 }
 
 .quote-brackets {
-    color: #7c9089;
+    color: var(--gray);
 }
 
 .quote-blockquote {

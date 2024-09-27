@@ -10,7 +10,7 @@ function Contact() {
         <>
             <div id='contact'>
                 <div className='content contact-container'>
-                    <h2>{t('headings.contactSubheading')}</h2>
+                    <h1>{t('headings.contactSubheading')}</h1>
                     <div className='contact-message'>
                         <p>{t('contactMessage.part1')}</p>
                         <p>{t('contactMessage.part2')}</p>
@@ -21,7 +21,8 @@ function Contact() {
                             size='36'
                         />
                     </div>
-                    <p>{t('funFact.label')} : {t('funFact.message')}</p>
+                    <h3 className='contact-fun-fact-heading'>{t('funFact.label')}</h3>
+                    <p className='contact-fun-fact-text'>{t('funFact.message')}</p>
                 </div>
             </div>
         </>
