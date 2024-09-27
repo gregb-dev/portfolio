@@ -80,12 +80,17 @@
 }
 
 .burger-menu-multilang {
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+}
+
+.burger-menu-multilang li {
+    cursor: pointer;
 }
 
 /* Menu item styles */

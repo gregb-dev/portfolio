@@ -7,7 +7,11 @@ import FooterLogo from '../../assets/logos/gb/gb-logomark-white.svg';
 
 function Footer() {
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (language: string) => {
+        i18n.changeLanguage(language);
+    };
 
     return (
         <>
@@ -35,8 +39,8 @@ function Footer() {
                                 </div>
                                 <ul className='footer-nav-section footer-nav-multilang'>
                                     <li className='footer-label'>{t('footerLabels.multiLang')}</li>
-                                    <li>{t('menu.multiLang.english')}</li>
-                                    <li>{t('menu.multiLang.french')}</li>
+                                    <li className='footer-multilang-btn' onClick={() => changeLanguage('en')}>{t('menu.multiLang.english')}</li>
+                                    <li className='footer-multilang-btn' onClick={() => changeLanguage('fr')}>{t('menu.multiLang.french')}</li>
                                 </ul>
                             </div>
                             <div>

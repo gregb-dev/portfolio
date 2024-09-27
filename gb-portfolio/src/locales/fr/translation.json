@@ -2,6 +2,59 @@
     "name": "Greg",
     "familyName": "Berthold",
     "menu": {
-        "home": "Home"
-    }
+        "home": "Home",
+        "work": "My work",
+        "about": "About me",
+        "contact": "Contact",
+        "multiLang": {
+            "french": "Français",
+            "english": "Anglais",
+            "fr": "FR",
+            "en": "EN"
+        }
+    },
+    "welcomeHeading": {
+        "part1": "Allo! Je suis ",
+        "part2": "Greg",
+        "part3": "un",
+        "part4": "full-stack developer who loves creating engaging and innovative experiences for brands and their customers."
+    },
+    "quote": {
+        "part1": "Design shapes the user's journey; ",
+        "part2": "code ensures they reach their destination."
+    },
+    "headings": {
+        "work": "My work",
+        "workSubheading": "Latest projects",
+        "contact": "Contact",
+        "contactSubheading": "Let's connect!"
+    },
+    "contactMessage": {
+        "part1": "Want to work together or have a question?",
+        "part2": "Reach out. I'm always open for a chat."
+    },
+    "funFact": {
+        "label": "*** Fun fact ***",
+        "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."
+    },
+    "projectCardRecycMontreal": {
+        "name": "Recyc-Montréal",
+        "type": "Mobile, UX/UI Design",
+        "description": "An app that simplifies your waste management by allowing you to easily find collection days for your address.",
+        "imageAlt": "Iphone app preview",
+        "href": "/project-recycmontreal"
+    },
+    "projectCardEcoleEnFolie": {
+        "name": "École en folie",
+        "type": "Web, UI Design",
+        "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
+        "imageAlt": "Laptop preview",
+        "href": "/project-ecoleenfolie"
+    },
+    "footerLabels": {
+        "navigation": "Site",
+        "socials": "Socials",
+        "multiLang": "Langue"
+    },
+    "copyrights": "© 2024 Greg Berthold"
 }

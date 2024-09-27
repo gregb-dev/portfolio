@@ -4,10 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import GBLogo from '../../../assets/logos/gb/gb-logomark.svg';
+import Socials from '../socials/Socials';
 
 function BurgerMenu() {
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +22,16 @@ function BurgerMenu() {
         }
     };
 
+    const changeLanguage = (language: string) => {
+        i18n.changeLanguage(language);
+        closeMenu();
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+        document.body.classList.remove('no-scroll');
+    };
+
     return (
         <>
             <div className='burger-menu'>
@@ -32,15 +43,19 @@ function BurgerMenu() {
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <ul className='burger-menu-open'>
                         <li><img className='burger-menu-logo' src={GBLogo} alt='GB logo' /></li>
-                        <li><HashLink smooth to='/#root' onClick={toggleMenu}>{t('menu.home')}</HashLink></li>
-                        <li><HashLink smooth to='/#work' onClick={toggleMenu}>{t('menu.work')}</HashLink></li>
-                        <li><Link to='/about' onClick={toggleMenu}>{t('menu.about')}</Link></li>
-                        <li><HashLink smooth to="/#contact" onClick={toggleMenu}>{t('menu.contact')}</HashLink></li>
+                        <li><HashLink smooth to='/#root' onClick={closeMenu}>{t('menu.home')}</HashLink></li>
+                        <li><HashLink smooth to='/#work' onClick={closeMenu}>{t('menu.work')}</HashLink></li>
+                        <li><Link to='/about' onClick={closeMenu}>{t('menu.about')}</Link></li>
+                        <li><HashLink smooth to="/#contact" onClick={closeMenu}>{t('menu.contact')}</HashLink></li>
                     </ul>
                     <ul className='burger-menu-multilang'>
-                        <li>{t('menu.multiLang.english')}</li>
-                        <li>{t('menu.multiLang.french')}</li>
+                        <li onClick={() => changeLanguage('en')}>{t('menu.multiLang.english')}</li>
+                        <li onClick={() => changeLanguage('fr')}>{t('menu.multiLang.french')}</li>
                     </ul>
+                    <Socials
+                        isDarkIcons={true}
+                        size='24'
+                    />
                 </nav>
             </div>
         </>

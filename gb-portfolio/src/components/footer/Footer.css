@@ -67,3 +67,7 @@
 .footer-copyrights {
     font-size: 0.75rem;
 }
+
+.footer-multilang-btn {
+    cursor: pointer;
+}
