@@ -14,7 +14,7 @@
         }
     },
     "welcomeHeading": {
-        "part1": "Salut! Je suis ",
+        "part1": "Allo! Je suis ",
         "part2": "Greg",
         "part3": "un",
         "part4": "développeur full-stack passionné par la création d'expériences engageantes et innovantes pour les marques et leurs clients."
@@ -30,7 +30,7 @@
         "contactSubheading": "Entrons en contact."
     },
     "contactMessage": {
-        "part1": "Envie de collaborer ou une question?",
+        "part1": "Envie de collaborer ou vous avez une question?",
         "part2": "Contactez-moi. Je suis toujours ouvert à la discussion."
     },
     "funFact": {
