@@ -32,7 +32,7 @@ function Header() {
     return (
         <>
             <div id='header' className={`header-container ${scrolled ? 'scrolled' : ''}`}>
-                <ul className='header'>
+                <ul className='header site-width'>
                     <li>
                         <Link to='/'>
                             <img className='header-logo' src={GBLogo} alt='GB logo' />

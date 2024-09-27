@@ -38,6 +38,7 @@
     --white: #fffffc;
     --gray: #696969;
     --site-padding: 1rem;
+    --max-site-width: 1200px;
 
     font-family: "Urbanist-Regular",
         system-ui,
@@ -121,4 +122,11 @@ h3 {
 /* no scroll for when burger menu is open */
 .no-scroll {
     overflow: hidden;
+}
+
+.site-width {
+    height: 100%;
+    max-width: var(--max-site-width);
+    margin: 0 auto;
+    position: relative;
 }

@@ -8,7 +8,7 @@
 }
 
 .contact-social-links {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
 }
@@ -17,4 +17,8 @@
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     color: var(--pop-color);
+}
+
+.contact-fun-fact-text {
+    margin-bottom: 2rem;
 }

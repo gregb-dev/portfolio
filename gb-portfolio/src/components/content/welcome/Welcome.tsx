@@ -10,14 +10,16 @@ function Welcome() {
         <>
             <div id='welcome'>
                 <div className='content welcome-container'>
-                    <div className='welcome-card'>
-                        <h1 className='welcome-card-heading'>
-                            {t('welcomeHeading.part1')} <span className='welcome-card-heading-bold'>{t('welcomeHeading.part2')}</span> — {t('welcomeHeading.part3')}
-                            <br /> {t('welcomeHeading.part4')}
-                        </h1>
-                    </div>
-                    <div className='welcome-arrow-down'>
-                        <ArrowDownButton hashtagLink='/#quote' />
+                    <div className='site-width'>
+                        <div className='welcome-card'>
+                            <h1 className='welcome-card-heading'>
+                                {t('welcomeHeading.part1')} <span className='welcome-card-heading-bold'>{t('welcomeHeading.part2')}</span> — {t('welcomeHeading.part3')}
+                                <br /> {t('welcomeHeading.part4')}
+                            </h1>
+                        </div>
+                        <div className='welcome-arrow-down'>
+                            <ArrowDownButton hashtagLink='/#quote' />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -85,7 +85,7 @@ function QuoteWithDelay() {
         <>
             <div id='quote'>
                 <div className='content quote-container'>
-                    <div className='quote'>
+                    <div className='quote site-width'>
                         <p className='quote-date'>2024</p>
                         <div className='quote-code-snippet'>
                             <p className='quote-blockquote'>

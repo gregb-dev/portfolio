@@ -13,33 +13,35 @@ function Work() {
         <>
             <div id='work'>
                 <div className='content work-container'>
-                    <h1 className='heading'>{t('headings.work')}</h1>
-                    <h2 className='subheading'>{t('headings.workSubheading')}</h2>
-                    <div className='projects-layout'>
-                        <div className='project-card-container'>
-                            <ProjectCard
-                                name={t('projectCardRecycMontreal.name')}
-                                type={t('projectCardRecycMontreal.type')}
-                                description={t('projectCardRecycMontreal.description')}
-                                imageUrl1={RecycMontrealMockup01}
-                                imageUrl2={RecycMontrealMockup02}
-                                imageAlt={t('projectCardRecycMontreal.imageAlt')}
-                                href={t('projectCardRecycMontreal.href')}
-                                case='mobile'
-                                isProtected={true}
-                            />
-                        </div>
-                        <div className='project-card-container'>
-                            <ProjectCard
-                                name={t('projectCardEcoleEnFolie.name')}
-                                type={t('projectCardEcoleEnFolie.type')}
-                                description={t('projectCardEcoleEnFolie.description')}
-                                imageUrl1={EcoleEnFolieMockup}
-                                imageAlt={t('projectCardEcoleEnFolie.imageAlt')}
-                                href={t('projectCardEcoleEnFolie.href')}
-                                case='web'
-                                isProtected={true}
-                            />
+                    <div className='site-width'>
+                        <h1 className='heading'>{t('headings.work')}</h1>
+                        <h2 className='subheading'>{t('headings.workSubheading')}</h2>
+                        <div className='projects-layout'>
+                            <div className='project-card-container'>
+                                <ProjectCard
+                                    name={t('projectCardRecycMontreal.name')}
+                                    type={t('projectCardRecycMontreal.type')}
+                                    description={t('projectCardRecycMontreal.description')}
+                                    imageUrl1={RecycMontrealMockup01}
+                                    imageUrl2={RecycMontrealMockup02}
+                                    imageAlt={t('projectCardRecycMontreal.imageAlt')}
+                                    href={t('projectCardRecycMontreal.href')}
+                                    case='mobile'
+                                    isProtected={true}
+                                />
+                            </div>
+                            <div className='project-card-container'>
+                                <ProjectCard
+                                    name={t('projectCardEcoleEnFolie.name')}
+                                    type={t('projectCardEcoleEnFolie.type')}
+                                    description={t('projectCardEcoleEnFolie.description')}
+                                    imageUrl1={EcoleEnFolieMockup}
+                                    imageAlt={t('projectCardEcoleEnFolie.imageAlt')}
+                                    href={t('projectCardEcoleEnFolie.href')}
+                                    case='web'
+                                    isProtected={true}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

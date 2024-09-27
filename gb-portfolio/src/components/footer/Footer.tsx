@@ -17,7 +17,7 @@ function Footer() {
         <>
             <div id='footer'>
                 <div className='content footer-container'>
-                    <div className='footer-border'>
+                    <div className='footer-border site-width'>
                         <img className='footer-logo' src={FooterLogo} alt='Gb Logo' />
                         <div className='footer'>
                             <div className='footer-nav'>
