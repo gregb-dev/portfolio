@@ -38,3 +38,17 @@
     bottom: 0;
     right: 0;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+    .welcome-card-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome-card-heading {
+        font-size: 3rem;
+    }
+}

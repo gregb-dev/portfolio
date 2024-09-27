@@ -44,3 +44,19 @@
     width: 100%;
     height: auto;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+
+    .projects-layout>div {
+        /* Older WebKit browsers */
+        -ms-flex: 1 1 calc(100% / 3 - 2rem);
+        /* IE10 */
+        flex: 1 1 calc(100% / 3 - 2rem);
+    }
+
+    .projects-layout {
+        gap: 2rem;
+    }
+}

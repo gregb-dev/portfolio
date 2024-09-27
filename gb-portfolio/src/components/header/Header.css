@@ -1,6 +1,6 @@
 .header-container {
     margin: 0;
-    padding: 1rem var(--site-padding, 1rem);
+    padding: 1rem 1rem;
     width: 100%;
     height: auto;
     -moz-box-sizing: border-box;
@@ -40,6 +40,19 @@
 
 #header a {
     text-decoration: none;
+}
+
+@media (min-width: 576px) {
+    .header-container {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Laptops will have bigger logo and burger menu will vanish */
+@media (min-width: 768px) {
+    .header-logo {
+        width: 100px;
+    }
 }
 
 /*.scrolled {
