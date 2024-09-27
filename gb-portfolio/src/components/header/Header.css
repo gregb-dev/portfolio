@@ -42,14 +42,14 @@
     text-decoration: none;
 }
 
-@media (min-width: 576px) {
-    .header-container {
-        padding: 1rem 2rem;
-    }
-}
+/* MEDIA QUERIES */
 
 /* Laptops will have bigger logo and burger menu will vanish */
 @media (min-width: 768px) {
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
     .header-logo {
         width: 100px;
     }

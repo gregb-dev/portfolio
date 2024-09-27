@@ -47,7 +47,7 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 
     .projects-layout>div {
         /* Older WebKit browsers */

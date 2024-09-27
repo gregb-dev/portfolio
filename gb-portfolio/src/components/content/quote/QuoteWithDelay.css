@@ -109,14 +109,14 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .quote-blockquote {
         font-size: 1.5rem;
     }
 
     .quote-author,
     .quote-date {
-        font-size: 2.14rem;
+        font-size: 2rem;
     }
 
     .quote-cursor {
@@ -136,7 +136,7 @@
 
     .quote-author,
     .quote-date {
-        font-size: 2.57rem;
+        font-size: 2rem;
     }
 
     .quote-cursor {
