@@ -2,9 +2,9 @@
     "name": "Greg",
     "familyName": "Berthold",
     "menu": {
-        "home": "Home",
-        "work": "My work",
-        "about": "About me",
+        "home": "Accueil",
+        "work": "Réalisations",
+        "about": "À propos de moi",
         "contact": "Contact",
         "multiLang": {
             "french": "Français",
@@ -14,48 +14,48 @@
         }
     },
     "welcomeHeading": {
-        "part1": "Allo! Je suis ",
+        "part1": "Salut! Je suis ",
         "part2": "Greg",
         "part3": "un",
-        "part4": "full-stack developer who loves creating engaging and innovative experiences for brands and their customers."
+        "part4": "développeur full-stack passionné par la création d'expériences engageantes et innovantes pour les marques et leurs clients."
     },
     "quote": {
-        "part1": "Design shapes the user's journey; ",
-        "part2": "code ensures they reach their destination."
+        "part1": "Le design façonne le parcours d'une personne;",
+        "part2": "le code assure qu'elle atteigne sa destination."
     },
     "headings": {
-        "work": "My work",
-        "workSubheading": "Latest projects",
+        "work": "Réalisations",
+        "workSubheading": "Projets récents",
         "contact": "Contact",
-        "contactSubheading": "Let's connect!"
+        "contactSubheading": "Entrons en contact."
     },
     "contactMessage": {
-        "part1": "Want to work together or have a question?",
-        "part2": "Reach out. I'm always open for a chat."
+        "part1": "Envie de collaborer ou une question?",
+        "part2": "Contactez-moi. Je suis toujours ouvert à la discussion."
     },
     "funFact": {
-        "label": "*** Fun fact ***",
-        "message": "I created this portfolio in React, Vite and Typescript. You can find the project on my GitHub page."
+        "label": "*** Le saviez-vous? ***",
+        "message": "J'ai créé ce portfolio avec React, Vite et TypeScript. Vous pouvez trouver le projet sur ma page GitHub."
     },
     "projectCardRecycMontreal": {
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
-        "description": "An app that simplifies your waste management by allowing you to easily find collection days for your address.",
-        "imageAlt": "Iphone app preview",
+        "description": "Une application qui simplifie la gestion des déchets en vous permettant de trouver facilement les jours de collecte pour votre adresse.",
+        "imageAlt": "Aperçu de l'application sur iPhone",
         "href": "/"
     },
     "projectCardEcoleEnFolie": {
         "name": "École en folie",
         "type": "Web, UI Design",
-        "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
-        "imageAlt": "Laptop preview",
+        "description": "Un service d'abonnement donnant accès à une banque d'exercices de français et de mathématiques pour l'enseignement primaire.",
+        "imageAlt": "Aperçu sur ordinateur portable",
         "href": "/"
     },
     "footerLabels": {
         "navigation": "Site",
-        "socials": "Socials",
+        "socials": "Réseaux sociaux",
         "multiLang": "Langue"
     },
     "copyrights": "© 2024 Greg Berthold",
-    "projectWarning": "Please get in touch with me for details about this project."
+    "projectWarning": "Veuillez me contacter pour plus de détails sur ce projet."
 }

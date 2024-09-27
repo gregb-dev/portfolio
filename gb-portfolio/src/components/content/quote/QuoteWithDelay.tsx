@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function QuoteWithDelay() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const [firstText, setFirstText] = useState('');
     const [secondText, setSecondText] = useState('');
@@ -21,10 +21,64 @@ function QuoteWithDelay() {
     const typingSpeed = 90; // in milliseconds
     const delayBetweenTexts = 1000; // 1 second delay between texts
 
-    const initialDelay = 2000; // Initial delay before typing starts
+    const initialDelay = 1000; // Initial delay before typing starts
+
+    // Reset typing effect when locale changes
+    /*useEffect(() => {
+        setFirstText('');
+        setSecondText('');
+        setIndex(0);
+        setSecondIndex(0);
+        setStartTyping(false);
+        setFadeIn(false);
+        const timer = setTimeout(() => {
+            setFadeIn(true);
+            setStartTyping(true);
+        }, initialDelay);
+
+        return () => clearTimeout(timer);
+    }, [firstTextContent, secondTextContent, initialDelay]);*/
 
     // Set up IntersectionObserver to trigger typing effect on scroll
+    /*useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setFadeIn(true);
+                    setTimeout(() => {
+                        setStartTyping(true);
+                    }, initialDelay);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (textContainerRef.current) {
+            observer.observe(textContainerRef.current);
+        }
+
+        return () => {
+            if (textContainerRef.current) {
+                observer.unobserve(textContainerRef.current);
+            }
+        };
+    }, []);*/
+
+    // Function to reset the typing animation
+    const resetTyping = () => {
+        setFirstText('');
+        setSecondText('');
+        setIndex(0);
+        setSecondIndex(0);
+        setStartTyping(false);
+        setFadeIn(false);
+    };
+
+    // Reset typing animation when the locale changes
     useEffect(() => {
+        resetTyping();
+
+        // IntersectionObserver setup to trigger typing effect on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -46,7 +100,7 @@ function QuoteWithDelay() {
                 observer.unobserve(textContainerRef.current);
             }
         };
-    }, []);
+    }, [i18n.language]); // Dependency on language change
 
     // First text typing effect
     useEffect(() => {
