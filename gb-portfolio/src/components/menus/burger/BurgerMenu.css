@@ -60,13 +60,16 @@
 
 .menu.open {
     display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .burger-menu-open {
     width: calc(100% - 2rem);
     height: auto;
     padding: 0 1rem;
-    border-bottom: 1px solid var(--accent-color);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -74,13 +77,24 @@
     align-items: center;
 }
 
-.burger-menu-logo {
-    width: 28px;
+.burger-menu-logo-bar {
+    border-top: 1px solid var(--secondary-color);
+    width: 100%;
     height: auto;
 }
 
+.burger-menu-logo {
+    padding: 0 1rem;
+    margin-top: -34px;
+    width: 28px;
+    height: auto;
+    background-color: var(--site-background-color);
+}
+
 .burger-menu-multilang {
-    margin-bottom: 2rem;
+    min-width: 100px;
+    margin-bottom: 1rem;
+    border-top: 1px solid #dddddd;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -90,7 +104,23 @@
 }
 
 .burger-menu-multilang li {
+    font-family: "Urbanist-Bold";
     cursor: pointer;
+    color: var(--accent-color);
+}
+
+.burger-menu-multilang li,
+.menu .welcome-socials li:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+}
+
+.burger-menu-multilang li:hover,
+.menu .welcome-socials li:hover {
+    opacity: 0.7;
 }
 
 /* Menu item styles */
@@ -106,12 +136,35 @@
 .menu ul li a {
     font-family: "Urbanist-Medium";
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.0625rem;
     text-decoration: none;
     transition: color 0.2s;
     text-transform: uppercase;
 }
 
-.menu ul li a:hover {
-    color: var(--text-color);
+.burger-menu-item a {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--site-background-color);
+}
+
+.burger-menu-item a:hover {
+    border-bottom: 2px solid var(--accent-color);
+    -webkit-transition: border-bottom 0.4s ease;
+    -moz-transition: border-bottom 0.4s ease;
+    -o-transition: border-bottom 0.4s ease;
+    transition: border-bottom 0.4s ease;
+}
+
+.burger-menu-item a.active-link {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+#burger-menu-item-last {
+    margin-bottom: 1.5rem;
+}
+
+#burger-menu-multilang-first {
+    margin-top: 1.5rem;
 }

@@ -1,7 +1,7 @@
 import './BurgerMenu.css';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import GBLogo from '../../../assets/logos/gb/gb-logomark.svg';
 import Socials from '../socials/Socials';
@@ -9,6 +9,12 @@ import Socials from '../socials/Socials';
 function BurgerMenu() {
 
     const { t, i18n } = useTranslation();
+
+    const location = useLocation();
+
+    const isActive = (path: string) => {
+        return location.pathname === path || location.hash === path;
+    };
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -42,15 +48,15 @@ function BurgerMenu() {
                 </div>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <ul className='burger-menu-open'>
-                        <li><img className='burger-menu-logo' src={GBLogo} alt='GB logo' /></li>
-                        <li><HashLink smooth to='/#root' onClick={closeMenu}>{t('menu.home')}</HashLink></li>
-                        <li><HashLink smooth to='/#work' onClick={closeMenu}>{t('menu.work')}</HashLink></li>
-                        <li><Link to='/about' onClick={closeMenu}>{t('menu.about')}</Link></li>
-                        <li><HashLink smooth to="/#contact" onClick={closeMenu}>{t('menu.contact')}</HashLink></li>
-                    </ul>
-                    <ul className='burger-menu-multilang'>
-                        <li onClick={() => changeLanguage('en')}>{t('menu.multiLang.english')}</li>
-                        <li onClick={() => changeLanguage('fr')}>{t('menu.multiLang.french')}</li>
+                        <li className='burger-menu-logo-bar'><img className='burger-menu-logo' src={GBLogo} alt='GB logo' /></li>
+                        <li className='burger-menu-item'><HashLink className={isActive('/') ? 'active-link' : ''} smooth to='/#root' onClick={closeMenu}>{t('menu.home')}</HashLink></li>
+                        <li className='burger-menu-item'><HashLink smooth to='/#work' onClick={closeMenu}>{t('menu.work')}</HashLink></li>
+                        <li className='burger-menu-item'><Link className={isActive('/about') ? 'active-link' : ''} to='/about' onClick={closeMenu}>{t('menu.about')}</Link></li>
+                        <li id='burger-menu-item-last' className='burger-menu-item'><HashLink smooth to="/#contact" onClick={closeMenu}>{t('menu.contact')}</HashLink></li>
+                        <ul className='burger-menu-multilang'>
+                            <li id='burger-menu-multilang-first' onClick={() => changeLanguage('en')}>{t('menu.multiLang.english')}</li>
+                            <li onClick={() => changeLanguage('fr')}>{t('menu.multiLang.french')}</li>
+                        </ul>
                     </ul>
                     <Socials
                         isDarkIcons={true}

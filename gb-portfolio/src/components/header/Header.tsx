@@ -56,20 +56,22 @@ function Header() {
                                 {<BurgerMenu />}
                             </div>
                             <ul className='header-desktop-menu'>
-                                <li><HashLink
-                                    smooth to='/#root'
-                                    className={isActive('/') ? 'active-link' : ''}
-                                >
-                                    {t('menu.home')}
-                                </HashLink>
+                                <li>
+                                    <HashLink
+                                        smooth to='/#root'
+                                        className={isActive('/') ? 'active-link' : ''}
+                                    >
+                                        {t('menu.home')}
+                                    </HashLink>
                                 </li>
                                 <li><HashLink smooth to='/#work'>{t('menu.work')}</HashLink></li>
-                                <li><Link
-                                    to='/about'
-                                    className={isActive('/about') ? 'active-link' : ''}
-                                >
-                                    {t('menu.about')}
-                                </Link>
+                                <li>
+                                    <Link
+                                        to='/about'
+                                        className={isActive('/about') ? 'active-link' : ''}
+                                    >
+                                        {t('menu.about')}
+                                    </Link>
                                 </li>
                                 <li id='header-desktop-menu-last-item'><HashLink smooth to='/#contact'>{t('menu.contact')}</HashLink></li>
                                 <ul className='header-multilang-menu'>
