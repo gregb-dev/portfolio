@@ -11,6 +11,6 @@ function ProjectRecycMontreal() {
             </div>
         </>
     )
-}
+};
 
 export default ProjectRecycMontreal;

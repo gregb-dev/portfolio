@@ -36,22 +36,22 @@ function Socials(props: SocialsProps) {
             <ul className='welcome-socials'>
                 <li>
                     <a href='mailto:greg.berthold@outlook.com'>
-                        <img className={`welcome-socials-icon ${sizeClass}`} src={emailIcon} alt='E-mail' />
+                        <img className={`welcome-socials-icon ${sizeClass}`} src={emailIcon} alt='E-mail icon' />
                     </a>
                 </li>
                 <li>
                     <a href='https://github.com/gregb-dev' target='_blank' rel='external noopener noreferrer'>
-                        <img className={`welcome-socials-icon ${sizeClass}`} src={githubIcon} alt='GitHub' />
+                        <img className={`welcome-socials-icon ${sizeClass}`} src={githubIcon} alt='GitHub icon' />
                     </a>
                 </li>
                 <li>
                     <a href='https://www.linkedin.com/in/gregberthold' target='_blank' rel='external noopener noreferrer'>
-                        <img className={`welcome-socials-icon ${sizeClass}`} src={linkedinIcon} alt='LinkedIn' />
+                        <img className={`welcome-socials-icon ${sizeClass}`} src={linkedinIcon} alt='LinkedIn icon' />
                     </a>
                 </li>
             </ul>
         </>
     )
-}
+};
 
 export default Socials;

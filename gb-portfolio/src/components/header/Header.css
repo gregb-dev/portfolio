@@ -6,12 +6,13 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: var(--site-background);
+    background-color: var(--site-background, #fffffc);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 
 .header {
@@ -108,8 +109,6 @@
     opacity: 0.7;
 }
 
-
-
 /* MEDIA QUERIES */
 
 /* Laptops will have bigger logo and burger menu will vanish */
@@ -139,4 +138,5 @@
 
 /*.scrolled {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
 }*/

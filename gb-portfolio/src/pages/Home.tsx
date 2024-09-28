@@ -13,6 +13,6 @@ function Home() {
             <Contact />
         </>
     )
-}
+};
 
 export default Home;

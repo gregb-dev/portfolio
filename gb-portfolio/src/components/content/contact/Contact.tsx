@@ -16,7 +16,7 @@ function Contact() {
                             <p>{t('contactMessage.part1')}</p>
                             <p>{t('contactMessage.part2')}</p>
                         </div>
-                        <div className="contact-social-links">
+                        <div className='contact-social-links'>
                             <Socials
                                 isDarkIcons={false}
                                 size='36'
@@ -29,6 +29,6 @@ function Contact() {
             </div>
         </>
     )
-}
+};
 
 export default Contact;

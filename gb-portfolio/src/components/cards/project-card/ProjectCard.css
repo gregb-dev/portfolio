@@ -6,6 +6,12 @@
     flex-wrap: nowrap;
 }
 
+/**
+* img-square-box is the overall square container.
+* project-card-img-container is the wrapper for the images for the effect.
+* The implementation below is a fallback to keep the aspect ratio and scalling of the square box for the
+* project thumbnails.
+*/
 .img-square-box {
     width: 100%;
     padding-top: 100%;

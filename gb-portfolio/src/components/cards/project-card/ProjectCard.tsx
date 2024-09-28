@@ -55,6 +55,6 @@ function ProjectCard(props: ProjectCardProps) {
             </div>
         </>
     )
-}
+};
 
 export default ProjectCard;

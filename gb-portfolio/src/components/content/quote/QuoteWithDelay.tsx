@@ -23,47 +23,6 @@ function QuoteWithDelay() {
 
     const initialDelay = 1000; // Initial delay before typing starts
 
-    // Reset typing effect when locale changes
-    /*useEffect(() => {
-        setFirstText('');
-        setSecondText('');
-        setIndex(0);
-        setSecondIndex(0);
-        setStartTyping(false);
-        setFadeIn(false);
-        const timer = setTimeout(() => {
-            setFadeIn(true);
-            setStartTyping(true);
-        }, initialDelay);
-
-        return () => clearTimeout(timer);
-    }, [firstTextContent, secondTextContent, initialDelay]);*/
-
-    // Set up IntersectionObserver to trigger typing effect on scroll
-    /*useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setFadeIn(true);
-                    setTimeout(() => {
-                        setStartTyping(true);
-                    }, initialDelay);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        if (textContainerRef.current) {
-            observer.observe(textContainerRef.current);
-        }
-
-        return () => {
-            if (textContainerRef.current) {
-                observer.unobserve(textContainerRef.current);
-            }
-        };
-    }, []);*/
-
     // Function to reset the typing animation
     const resetTyping = () => {
         setFirstText('');
@@ -167,6 +126,6 @@ function QuoteWithDelay() {
             </div>
         </>
     );
-}
+};
 
 export default QuoteWithDelay;

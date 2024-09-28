@@ -65,7 +65,7 @@ function BurgerMenu() {
                 </nav>
             </div>
         </>
-    );
+    )
 };
 
 export default BurgerMenu;

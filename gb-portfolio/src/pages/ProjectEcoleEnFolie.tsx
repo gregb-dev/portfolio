@@ -11,6 +11,6 @@ function ProjectEcoleEnFolie() {
             </div>
         </>
     )
-}
+};
 
 export default ProjectEcoleEnFolie;
