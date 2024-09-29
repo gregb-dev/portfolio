@@ -1,0 +1,54 @@
+.about-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-description-profile {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.about-description-pfp-container {
+    margin: 0 auto 2rem auto;
+    width: 240px;
+    height: 240px;
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.about-description-text {
+    margin: 0 auto;
+    min-width: 286px;
+    text-align: left;
+}
+
+.about-about-description-workflow {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-about-description-workflow-chart {
+    margin: 0 auto;
+}
+
+.about-about-description-workflow-chart li {
+    list-style: none;
+    text-align: center;
+}
