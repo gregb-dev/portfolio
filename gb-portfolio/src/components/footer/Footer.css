@@ -1,5 +1,5 @@
 .footer-container {
-    border-top: 3rem solid var(--secondary-color);
+    border-top: 2rem solid var(--secondary-color);
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
@@ -85,4 +85,8 @@
 .footer-nav-item:hover,
 .footer-nav-socials .welcome-socials li:hover {
     opacity: 0.7;
+}
+
+.footer-nav-item a {
+    opacity: 1;
 }

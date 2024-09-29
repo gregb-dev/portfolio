@@ -65,7 +65,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

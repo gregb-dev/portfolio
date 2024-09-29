@@ -2,7 +2,11 @@ import './Contact.css'
 import { useTranslation } from 'react-i18next';
 import Socials from '../../menus/socials/Socials';
 
-function Contact() {
+interface ContactProps {
+    showFunFact: boolean
+}
+
+function Contact(props: ContactProps) {
 
     const { t } = useTranslation();
 
@@ -22,8 +26,12 @@ function Contact() {
                                 size='36'
                             />
                         </div>
-                        <h3 className='contact-fun-fact-heading'>{t('funFact.label')}</h3>
-                        <p className='contact-fun-fact-text'>{t('funFact.message')}</p>
+                        {props.showFunFact && (
+                            <>
+                                <h3 className='contact-fun-fact-heading'>{t('funFact.label')}</h3>
+                                <p className='contact-fun-fact-text'>{t('funFact.message')}</p>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ function About() {
                 <AboutBanner />
                 <AboutDescription />
             </div>
-            <Contact />
+            <Contact showFunFact={false} />
         </>
     )
 };

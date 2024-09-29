@@ -10,7 +10,7 @@ function Home() {
             <Welcome />
             <QuoteWithDelay />
             <Work />
-            <Contact />
+            <Contact showFunFact={true} />
         </>
     )
 };
