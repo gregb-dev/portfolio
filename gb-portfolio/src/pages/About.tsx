@@ -1,10 +1,8 @@
-import { useTranslation } from 'react-i18next';
 import AboutBanner from '../components/content/about/AboutBanner';
 import AboutDescription from '../components/content/about/AboutDescription';
+import Contact from '../components/content/contact/Contact';
 
 function About() {
-
-    const { t } = useTranslation();
 
     return (
         <>
@@ -12,6 +10,7 @@ function About() {
                 <AboutBanner />
                 <AboutDescription />
             </div>
+            <Contact />
         </>
     )
 };

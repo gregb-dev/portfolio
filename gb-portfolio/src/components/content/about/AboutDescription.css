@@ -45,7 +45,9 @@
 }
 
 .about-about-description-workflow-chart {
-    margin: 0 auto;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .about-about-description-workflow-chart li {

@@ -1,0 +1,16 @@
+.about-workflow-bubble {
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background-color: #dddddd;
+}
+
+.about-workflow-bubble-seperator {
+    margin: 0.5rem auto;
+    width: 1px;
+    height: 32px;
+    background-color: var(--gray);
+}
+
+.about-workflow-bubble h2 {
+    color: var(--accent-color);
+}

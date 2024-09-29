@@ -1,6 +1,6 @@
 import './AboutDescription.css';
 import { useTranslation } from 'react-i18next';
-import ProfilePicture from '../../../assets/logos/gb/gb-logomark.svg';
+import AboutWorkflowBubble from './AboutWorkflowBubble';
 
 function AboutBanner() {
 
@@ -23,9 +23,70 @@ function AboutBanner() {
                         <p>{t('loremIpsum.part2')}</p>
                         <div className='about-about-description-workflow-chart'>
                             <ul>
-                                <li>Text</li>
-                                <li>|</li>
-                                <li>Text</li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='01.'
+                                        subHeading='Empathy & User Research'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='02.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='03.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='04.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='05.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='06.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='07.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={false}
+                                    />
+                                </li>
+                                <li>
+                                    <AboutWorkflowBubble
+                                        heading='08.'
+                                        subHeading='Problem Identification & Analysis'
+                                        description={t('loremIpsum.part3')}
+                                        endOfChart={true}
+                                    />
+                                </li>
                             </ul>
                         </div>
                     </div>
