@@ -26,6 +26,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Libel-Suit;
+    src: url(../assets/fonts/libel-suit-rg.otf);
+    font-style: normal;
+}
+
+
 :root {
     /* CSS Variables */
     --primary-color: #fffffc;
