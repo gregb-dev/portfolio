@@ -1,6 +1,6 @@
 import './Welcome.css';
 import { useTranslation } from 'react-i18next';
-import ArrowDownButton from '../../buttons/arrow/ArrowDownButton';
+import ArrowBlinkingButton from '../../buttons/arrow/ArrowBlinkingButton';
 
 function Welcome() {
 
@@ -18,7 +18,7 @@ function Welcome() {
                             </h1>
                         </div>
                         <div className='welcome-arrow-down'>
-                            <ArrowDownButton hashtagLink='/#quote' />
+                            <ArrowBlinkingButton hashtagLink='/#quote' directionDown={true} />
                         </div>
                     </div>
                 </div>

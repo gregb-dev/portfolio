@@ -32,8 +32,12 @@
     margin-top: 8px;
 }
 
-.arrow-icon {
+.arrow-icon-down {
     background-image: url(../../../assets/icons/arrow-down-accent.png);
+}
+
+.arrow-icon-up {
+    background-image: url(../../../assets/icons/arrow-up-accent.png);
 }
 
 @-webkit-keyframes arrowBounce {

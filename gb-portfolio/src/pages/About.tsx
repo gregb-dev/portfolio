@@ -9,8 +9,8 @@ function About() {
             <div id='about'>
                 <AboutBanner />
                 <AboutDescription />
+                <Contact showFunFact={false} />
             </div>
-            <Contact showFunFact={false} />
         </>
     )
 };

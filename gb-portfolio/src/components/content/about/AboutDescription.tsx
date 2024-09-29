@@ -1,6 +1,7 @@
 import './AboutDescription.css';
 import { useTranslation } from 'react-i18next';
 import AboutWorkflowBubble from './AboutWorkflowBubble';
+import ArrowBlinkingButton from '../../buttons/arrow/ArrowBlinkingButton';
 
 function AboutBanner() {
 
@@ -89,6 +90,9 @@ function AboutBanner() {
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div className='scroll-arrow-right'>
+                        <ArrowBlinkingButton hashtagLink='/about#root' directionDown={false} />
                     </div>
                 </div>
             </div>

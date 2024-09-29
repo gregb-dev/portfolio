@@ -139,6 +139,17 @@ h3 {
     position: relative;
 }
 
+.scroll-arrow-right {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
