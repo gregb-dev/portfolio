@@ -18,7 +18,7 @@ function AboutWorkflowBubble(props: AboutWorkflowBubbleProps) {
                 <li><h3>{props.subHeading}</h3></li>
                 <li>{props.description}</li>
                 {props.imageUrl && (
-                    <li><img src={props.imageUrl} alt={props.imageAlt} /></li>
+                    <li><div className='about-workflow-bubble-img-container'><img src={props.imageUrl} alt={props.imageAlt} /></div></li>
                 )}
             </ul>
             {!props.endOfChart && (

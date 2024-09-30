@@ -2,6 +2,15 @@ import './AboutDescription.css';
 import { useTranslation } from 'react-i18next';
 import AboutWorkflowBubble from './AboutWorkflowBubble';
 import ArrowBlinkingButton from '../../buttons/arrow/ArrowBlinkingButton';
+import EmpathyImage from '../../../assets/images/workflow/empathy.png';
+import AnalysisImage from '../../../assets/images/workflow/analysis.png';
+import IdeaImage from '../../../assets/images/workflow/idea.png';
+import PrototypingImage from '../../../assets/images/workflow/web-design.png';
+import FeedbackImage from '../../../assets/images/workflow/feedback.png';
+import IterationImage from '../../../assets/images/workflow/shapes.png';
+import DesignImage from '../../../assets/images/workflow/mobile.png';
+import OptimizationImage from '../../../assets/images/workflow/optimization.png';
+
 
 function AboutBanner() {
 
@@ -30,6 +39,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.empathy.heading')}
                                         description={t('workflow.empathy.text')}
                                         endOfChart={false}
+                                        imageUrl={EmpathyImage}
                                     />
                                 </li>
                                 <li>
@@ -38,6 +48,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.analysis.heading')}
                                         description={t('workflow.analysis.text')}
                                         endOfChart={false}
+                                        imageUrl={AnalysisImage}
                                     />
                                 </li>
                                 <li>
@@ -46,6 +57,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.concept.heading')}
                                         description={t('workflow.concept.text')}
                                         endOfChart={false}
+                                        imageUrl={IdeaImage}
                                     />
                                 </li>
                                 <li>
@@ -54,6 +66,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.prototyping.heading')}
                                         description={t('workflow.prototyping.text')}
                                         endOfChart={false}
+                                        imageUrl={PrototypingImage}
                                     />
                                 </li>
                                 <li>
@@ -62,6 +75,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.feedback.heading')}
                                         description={t('workflow.feedback.text')}
                                         endOfChart={false}
+                                        imageUrl={FeedbackImage}
                                     />
                                 </li>
                                 <li>
@@ -70,6 +84,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.refinement.heading')}
                                         description={t('workflow.refinement.text')}
                                         endOfChart={false}
+                                        imageUrl={IterationImage}
                                     />
                                 </li>
                                 <li>
@@ -78,6 +93,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.implementation.heading')}
                                         description={t('workflow.implementation.text')}
                                         endOfChart={false}
+                                        imageUrl={DesignImage}
                                     />
                                 </li>
                                 <li>
@@ -86,6 +102,7 @@ function AboutBanner() {
                                         subHeading={t('workflow.postLaunch.heading')}
                                         description={t('workflow.postLaunch.text')}
                                         endOfChart={true}
+                                        imageUrl={OptimizationImage}
                                     />
                                 </li>
                             </ul>
