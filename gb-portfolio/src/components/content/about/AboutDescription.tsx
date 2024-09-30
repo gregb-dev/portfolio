@@ -15,76 +15,76 @@ function AboutBanner() {
                         <div className='about-description-pfp-container'>
                         </div>
                         <div className='about-description-text'>
-                            <h1>MY JOURNEY</h1>
-                            <p>{t('loremIpsum.part1')}</p>
+                            <h1>{t('aboutMe.bioHeading')}</h1>
+                            <p>{t('aboutMe.bio')}</p>
                         </div>
                     </div>
                     <div className='about-about-description-workflow'>
-                        <h1>WORKFLOW</h1>
-                        <p>{t('loremIpsum.part2')}</p>
+                        <h1>{t('aboutMe.workflowHeading')}</h1>
+                        <p>{t('aboutMe.workflowText')}</p>
                         <div className='about-about-description-workflow-chart'>
                             <ul>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='01.'
-                                        subHeading='Empathy & User Research'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.empathy.heading')}
+                                        description={t('workflow.empathy.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='02.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.analysis.heading')}
+                                        description={t('workflow.analysis.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='03.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.concept.heading')}
+                                        description={t('workflow.concept.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='04.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.prototyping.heading')}
+                                        description={t('workflow.prototyping.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='05.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.feedback.heading')}
+                                        description={t('workflow.feedback.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='06.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.refinement.heading')}
+                                        description={t('workflow.refinement.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='07.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.implementation.heading')}
+                                        description={t('workflow.implementation.text')}
                                         endOfChart={false}
                                     />
                                 </li>
                                 <li>
                                     <AboutWorkflowBubble
                                         heading='08.'
-                                        subHeading='Problem Identification & Analysis'
-                                        description={t('loremIpsum.part3')}
+                                        subHeading={t('workflow.postLaunch.heading')}
+                                        description={t('workflow.postLaunch.text')}
                                         endOfChart={true}
                                     />
                                 </li>

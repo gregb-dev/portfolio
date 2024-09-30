@@ -58,6 +58,46 @@
     },
     "copyrights": "© 2024 Greg Berthold",
     "projectWarning": "Please get in touch with me for details about this project.",
+    "aboutMe": {
+        "bioHeading": "My journey",
+        "bio": "Bio.",
+        "workflowHeading": "Workflow",
+        "workflowText": "Workflow"
+    },
+    "workflow": {
+        "empathy": {
+            "heading": "User Research",
+            "text": ""
+        },
+        "analysis": {
+            "heading": "Problem Identification & Analysis",
+            "text": ""
+        },
+        "concept": {
+            "heading": "Ideation & Concept Development",
+            "text": ""
+        },
+        "prototyping": {
+            "heading": "Prototyping",
+            "text": ""
+        },
+        "feedback": {
+            "heading": "User Testing & Feedback",
+            "text": ""
+        },
+        "refinement": {
+            "heading": "Iteration and Refinement",
+            "text": ""
+        },
+        "implementation": {
+            "heading": "Design Implementation",
+            "text": ""
+        },
+        "postLaunch": {
+            "heading": "Post-Launch Analysis",
+            "text": ""
+        }
+    },
     "loremIpsum": {
         "part1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, tellus ut scelerisque tempor, sem lorem tempus neque, at venenatis ex lacus vitae ex. Curabitur sodales fringilla ipsum in faucibus. Nulla eleifend justo a lacus egestas, vitae egestas metus pulvinar. Curabitur nunc est, pharetra vel tempus iaculis, blandit a velit. Proin sodales urna massa, sed consectetur purus aliquet et. Sed est orci, egestas sed consequat a, aliquam quis neque. Vestibulum id massa arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam id eleifend massa. Fusce vulputate tortor interdum odio vulputate, nec aliquet ante commodo. Vivamus laoreet lorem nec risus bibendum tempor. Vestibulum non euismod urna. Duis mattis quam eget pretium viverra. Morbi aliquam turpis sed velit egestas ultricies.",
         "part2": "Sed volutpat posuere enim non pulvinar. Pellentesque porttitor facilisis placerat. Morbi venenatis felis eu ex varius, et euismod ex euismod. Ut felis enim, hendrerit non justo vitae, placerat molestie nunc. Nam sagittis tortor elementum lacus faucibus luctus. Suspendisse varius posuere lectus in sollicitudin. Fusce posuere non nisi iaculis vulputate. Nulla et dui nec erat placerat dignissim. Pellentesque eu arcu non libero varius iaculis. Nulla vehicula venenatis nisi ac rutrum. Pellentesque nec mi id velit auctor interdum in id leo. Nunc orci quam, euismod sed lacinia eget, porta ac nulla. Praesent in lacinia ligula. Phasellus tempus, odio eu pulvinar pellentesque, risus augue vulputate metus, sit amet viverra augue augue eget ante. Aenean mollis orci eget tortor rhoncus eleifend. Nunc ut odio tristique tortor ultricies dignissim.",
