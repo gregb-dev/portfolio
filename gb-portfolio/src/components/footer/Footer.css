@@ -65,6 +65,16 @@
     color: var(--gray);
 }
 
+.footer-attribution {
+    margin-bottom: 1rem;
+}
+
+.footer-attribution a,
+.footer-attribution a:hover {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+}
+
 .footer-copyrights {
     font-size: 0.75rem;
 }

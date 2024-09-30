@@ -46,6 +46,7 @@ function Footer() {
                                 </ul>
                             </div>
                             <div>
+                                <p className='footer-attribution'><a href='https://www.flaticon.com/authors/becris' target='_blank' rel='external noopener noreferrer'>{t('attribution.becris')}</a></p>
                                 <p className='footer-copyrights'>{t('copyrights')}</p>
                             </div>
                         </div>

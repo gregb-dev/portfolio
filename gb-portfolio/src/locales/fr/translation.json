@@ -59,7 +59,7 @@
     "copyrights": "© 2024 Greg Berthold",
     "projectWarning": "Veuillez me contacter pour plus de détails sur ce projet.",
     "aboutMe": {
-        "bioHeading": "My journey",
+        "bioHeading": "Mon parcours",
         "bio": "Bio.",
         "workflowHeading": "Processus de travail",
         "workflowText": "Aucun projet ne se ressemble, mais voici un aperçu de mon approche habituelle. C'est un mélange de stratégie, d'intuition et de passion."
@@ -97,6 +97,9 @@
             "heading": "Analyse post-lancement",
             "text": "Après le lancement, le travail continue! J'analyse les données et les retours utilisateurs pour apprendre, optimiser et préparer les futures améliorations."
         }
+    },
+    "attribution": {
+        "becris": "Quelques flaticons créés par Becris"
     },
     "loremIpsum": {
         "part1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, tellus ut scelerisque tempor, sem lorem tempus neque, at venenatis ex lacus vitae ex. Curabitur sodales fringilla ipsum in faucibus. Nulla eleifend justo a lacus egestas, vitae egestas metus pulvinar. Curabitur nunc est, pharetra vel tempus iaculis, blandit a velit. Proin sodales urna massa, sed consectetur purus aliquet et. Sed est orci, egestas sed consequat a, aliquam quis neque. Vestibulum id massa arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam id eleifend massa. Fusce vulputate tortor interdum odio vulputate, nec aliquet ante commodo. Vivamus laoreet lorem nec risus bibendum tempor. Vestibulum non euismod urna. Duis mattis quam eget pretium viverra. Morbi aliquam turpis sed velit egestas ultricies.",
