@@ -60,14 +60,14 @@
     "projectWarning": "Please get in touch with me for details about this project.",
     "aboutMe": {
         "bioHeading": "My journey",
-        "bio": "Bio.",
+        "bio": "I'm passionate about software engineering, music, and culinary arts. From launching a freelance marketing & web design company to organizing charity events, my journey has been consistently fueled by innovation and a growth mindset. My goal is to create a positive impact through thoughtful UX design and AI technology.",
         "workflowHeading": "Workflow",
         "workflowText": "No two projects are alike, but here's a glimpse into my usual approach. It's a blend of strategy, intuition, and passion."
     },
     "workflow": {
         "empathy": {
             "heading": "User Research",
-            "text": "It all starts with understanding the users. What do they love? What frustrates them? I talk to them, run surveys, and create user personas to get a clear picture."
+            "text": "It all starts with understanding the users. What do they love? What are their concerns and needs? I talk to them, run surveys, and create user personas to get a clear picture."
         },
         "analysis": {
             "heading": "Problem Identification & Analysis",
@@ -83,7 +83,7 @@
         },
         "feedback": {
             "heading": "User Testing & Feedback",
-            "text": "Testing time! I don't just run a test protocol—I share the design with my team and users, gathering their insights to make sure it's user-friendly and intuitive."
+            "text": "Testing time! I don't just run a test protocol—I share the design with my clients and users, gathering their insights to make sure it's user-friendly and intuitive."
         },
         "refinement": {
             "heading": "Iteration & Refinement",

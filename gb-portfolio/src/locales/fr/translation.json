@@ -60,14 +60,14 @@
     "projectWarning": "Veuillez me contacter pour plus de détails sur ce projet.",
     "aboutMe": {
         "bioHeading": "Mon parcours",
-        "bio": "Bio.",
+        "bio": "Je suis passionné par le génie logiciel, la musique et les arts culinaires. Du lancement de ma compagnie de marketing et de conception Web ou l'organisation d'événements de bienfaisance, mon parcours a toujours été inspiré par l'innovation et le savoir-faire. Actuellement, je vise à avoir un impact positif par le design et de la technologie IA.",
         "workflowHeading": "Processus de travail",
         "workflowText": "Aucun projet ne se ressemble, mais voici un aperçu de mon approche habituelle. C'est un mélange de stratégie, d'intuition et de passion."
     },
     "workflow": {
         "empathy": {
             "heading": "Recherche",
-            "text": "Tout commence par comprendre les utilisateurs. Qu'est-ce qu'ils aiment? Qu'est-ce qui les frustre? Je discute avec eux, réalise des sondages et crée des personas pour avoir une vision claire."
+            "text": "Tout commence par comprendre les utilisateurs. Qu'est-ce qu'ils aiment? Quelles sont leurs préoccupations et leurs besoins? Je discute avec eux, réalise des sondages et crée des personas pour avoir une vision claire."
         },
         "analysis": {
             "heading": "Identification & analyse des problèmes",
@@ -83,7 +83,7 @@
         },
         "feedback": {
             "heading": "Tests utilisateurs & retours",
-            "text": "C'est l'heure des tests! Je ne me contente pas seulement au protocole de test. Je partage le design avec mon équipe et des utilisateurs pour recueillir leurs avis et m'assurer que tout est convivial et intuitif."
+            "text": "C'est l'heure des tests! Je ne me contente pas seulement au protocole de test. Je partage le design avec mes clients et des utilisateurs pour recueillir leurs avis et m'assurer que tout est convivial et intuitif."
         },
         "refinement": {
             "heading": "Itérations & améliorations",
