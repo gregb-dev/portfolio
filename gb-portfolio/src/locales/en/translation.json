@@ -62,40 +62,40 @@
         "bioHeading": "My journey",
         "bio": "Bio.",
         "workflowHeading": "Workflow",
-        "workflowText": "Workflow"
+        "workflowText": "No two projects are alike, but here's a glimpse into my usual approach. It's a blend of strategy, intuition, and passion."
     },
     "workflow": {
         "empathy": {
             "heading": "User Research",
-            "text": ""
+            "text": "It all starts with understanding the users. What do they love? What frustrates them? I talk to them, run surveys, and create user personas to get a clear picture."
         },
         "analysis": {
             "heading": "Problem Identification & Analysis",
-            "text": ""
+            "text": "Next, it's time to connect the dots. I pinpoint the problem, dig into the root causes, and analyze the details to find the best solution."
         },
         "concept": {
             "heading": "Ideation & Concept Development",
-            "text": ""
+            "text": "This is where I unleash my creativity and let ideas take flight! I brainstorm, sketch, make UML charts, and map out ideas. It's all about shaping the vision with fresh inspiration."
         },
         "prototyping": {
             "heading": "Prototyping",
-            "text": ""
+            "text": "I turn ideas into wireframes, stubs, and prototypes. It's trial and error until everything feels just right, proving the concept along the way."
         },
         "feedback": {
             "heading": "User Testing & Feedback",
-            "text": ""
+            "text": "Testing time! I don't just run a test protocol—I share the design with my team and users, gathering their insights to make sure it's user-friendly and intuitive."
         },
         "refinement": {
-            "heading": "Iteration and Refinement",
-            "text": ""
+            "heading": "Iteration & Refinement",
+            "text": "With feedback in hand, I tweak the design or code. Then it's back to testing to ensure everything is seamless and cohesive."
         },
         "implementation": {
-            "heading": "Design Implementation",
-            "text": ""
+            "heading": "Final Design Implementation",
+            "text": "This is where it all comes together. I make sure it's sleek, functional, and ready to make an impact."
         },
         "postLaunch": {
             "heading": "Post-Launch Analysis",
-            "text": ""
+            "text": "After launch, the work isn't over! I dive into analytics and user reviews to learn, optimize, and plan for future improvements."
         }
     },
     "loremIpsum": {

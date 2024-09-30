@@ -16,7 +16,7 @@ function AboutWorkflowBubble(props: AboutWorkflowBubbleProps) {
             <ul className='about-workflow-bubble'>
                 <li><h2>{props.heading}</h2></li>
                 <li><h3>{props.subHeading}</h3></li>
-                <li>{props.description}</li>
+                <li><p>{props.description}</p></li>
                 {props.imageUrl && (
                     <li><div className='about-workflow-bubble-img-container'><img src={props.imageUrl} alt={props.imageAlt} /></div></li>
                 )}

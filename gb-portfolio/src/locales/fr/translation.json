@@ -57,5 +57,50 @@
         "multiLang": "Langue"
     },
     "copyrights": "© 2024 Greg Berthold",
-    "projectWarning": "Veuillez me contacter pour plus de détails sur ce projet."
+    "projectWarning": "Veuillez me contacter pour plus de détails sur ce projet.",
+    "aboutMe": {
+        "bioHeading": "My journey",
+        "bio": "Bio.",
+        "workflowHeading": "Processus de travail",
+        "workflowText": "Aucun projet ne se ressemble, mais voici un aperçu de mon approche habituelle. C'est un mélange de stratégie, d'intuition et de passion."
+    },
+    "workflow": {
+        "empathy": {
+            "heading": "Recherche",
+            "text": "Tout commence par comprendre les utilisateurs. Qu'est-ce qu'ils aiment? Qu'est-ce qui les frustre? Je discute avec eux, réalise des sondages et crée des personas pour avoir une vision claire."
+        },
+        "analysis": {
+            "heading": "Identification & analyse des problèmes",
+            "text": "Ensuite, j'identifie le problème, j'examine les causes profondes et j'analyse les détails pour trouver la meilleure solution."
+        },
+        "concept": {
+            "heading": "Idéation & développement de concept",
+            "text": "C'est ici que je libère ma créativité et laisse les idées s'envoler! Je fais du brainstorming, je crée des graphiques UML et je dessine. L'objectif est de façonner la vision avec une inspiration nouvelle."
+        },
+        "prototyping": {
+            "heading": "Prototypage",
+            "text": "Je transforme les idées en maquettes et prototypes. C'est un processus d'essais et d'erreurs jusqu'à ce que tout soit parfait et que le concept soit validé."
+        },
+        "feedback": {
+            "heading": "Tests utilisateurs & retours",
+            "text": "C'est l'heure des tests! Je ne me contente pas seulement au protocole de test. Je partage le design avec mon équipe et des utilisateurs pour recueillir leurs avis et m'assurer que tout est convivial et intuitif."
+        },
+        "refinement": {
+            "heading": "Itérations & améliorations",
+            "text": "Avec les retours, j'ajuste le design ou le code. Ensuite, je teste à nouveau pour garantir que tout est cohérent et fluide."
+        },
+        "implementation": {
+            "heading": "Mise en œuvre du design",
+            "text": "C'est ici que tout se concrétise. Je m'assure que le produit est élégant, fonctionnel et prêt à faire une différence."
+        },
+        "postLaunch": {
+            "heading": "Analyse post-lancement",
+            "text": "Après le lancement, le travail continue! J'analyse les données et les retours utilisateurs pour apprendre, optimiser et préparer les futures améliorations."
+        }
+    },
+    "loremIpsum": {
+        "part1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, tellus ut scelerisque tempor, sem lorem tempus neque, at venenatis ex lacus vitae ex. Curabitur sodales fringilla ipsum in faucibus. Nulla eleifend justo a lacus egestas, vitae egestas metus pulvinar. Curabitur nunc est, pharetra vel tempus iaculis, blandit a velit. Proin sodales urna massa, sed consectetur purus aliquet et. Sed est orci, egestas sed consequat a, aliquam quis neque. Vestibulum id massa arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam id eleifend massa. Fusce vulputate tortor interdum odio vulputate, nec aliquet ante commodo. Vivamus laoreet lorem nec risus bibendum tempor. Vestibulum non euismod urna. Duis mattis quam eget pretium viverra. Morbi aliquam turpis sed velit egestas ultricies.",
+        "part2": "Sed volutpat posuere enim non pulvinar. Pellentesque porttitor facilisis placerat. Morbi venenatis felis eu ex varius, et euismod ex euismod. Ut felis enim, hendrerit non justo vitae, placerat molestie nunc. Nam sagittis tortor elementum lacus faucibus luctus. Suspendisse varius posuere lectus in sollicitudin. Fusce posuere non nisi iaculis vulputate. Nulla et dui nec erat placerat dignissim. Pellentesque eu arcu non libero varius iaculis. Nulla vehicula venenatis nisi ac rutrum. Pellentesque nec mi id velit auctor interdum in id leo. Nunc orci quam, euismod sed lacinia eget, porta ac nulla. Praesent in lacinia ligula. Phasellus tempus, odio eu pulvinar pellentesque, risus augue vulputate metus, sit amet viverra augue augue eget ante. Aenean mollis orci eget tortor rhoncus eleifend. Nunc ut odio tristique tortor ultricies dignissim.",
+        "part3": "Maecenas elit magna, sollicitudin in aliquam sed, posuere vitae dui. Praesent urna felis, molestie maximus eros eu, rhoncus maximus turpis. Morbi imperdiet augue nibh, interdum accumsan massa luctus a. Nam non nulla sit amet sem vehicula tempus at nec nibh. Nulla tincidunt felis ligula, et molestie nunc scelerisque quis. Morbi faucibus mattis tortor, a aliquam justo consectetur sed. Vivamus faucibus velit ut bibendum consequat. Nam vel pretium quam. Nunc a sapien pretium, convallis massa at, condimentum lectus. Aenean egestas posuere volutpat. Nullam sollicitudin nec felis eget convallis."
+    }
 }

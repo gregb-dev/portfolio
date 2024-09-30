@@ -1,4 +1,6 @@
 .about-workflow-bubble {
+    max-width: 600px;
+    height: auto;
     border-radius: 1rem;
     padding: 2rem 1rem;
     background-color: #dddddd;
@@ -25,6 +27,7 @@
 }
 
 .about-workflow-bubble-img-container {
+    margin-top: 1.5rem;
     object-fit: contain;
     padding: 2rem;
     border-radius: 50%;
