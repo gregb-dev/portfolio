@@ -1,0 +1,150 @@
+.quote-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+}
+
+.quote {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    color: var(--white);
+}
+
+.quote-code-snippet {
+    padding: 0 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--white);
+}
+
+.quote-date {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+
+.quote-author {
+    font-size: 1.5rem;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    color: var(--white);
+}
+
+.quote-brackets {
+    color: var(--gray);
+}
+
+.quote-blockquote {
+    margin: 1rem 0;
+    color: #49a5d2;
+    font-family: monospace;
+}
+
+.quote-message-wrapper {
+    /* Start invisible */
+    opacity: 0;
+    /* Transition for fade-in effect */
+    transition: opacity 0.5s ease;
+}
+
+.quote-message-wrapper.fade-in {
+    opacity: 1;
+}
+
+/* Main typewriter text */
+.quote-message {
+    font-family: monospace;
+    display: inline;
+    word-spacing: -6px;
+}
+
+/* Blinking cursor */
+.quote-cursor {
+    display: inline-block;
+    /* Width of the cursor */
+    width: 2px;
+    height: 1.75rem;
+    /* Match the height of the font size */
+    margin-bottom: 4px;
+    background-color: var(--white);
+    animation: blink 1s step-end infinite;
+    /* Align cursor with the text */
+    vertical-align: bottom;
+}
+
+/* Blinking animation */
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .quote-blockquote {
+        font-size: 1.5rem;
+    }
+
+    .quote-author,
+    .quote-date {
+        font-size: 2rem;
+    }
+
+    .quote-cursor {
+        height: 2.5rem;
+        margin-bottom: 8px;
+    }
+
+    .quote-message {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .quote-blockquote {
+        font-size: 1.75rem;
+    }
+
+    .quote-author,
+    .quote-date {
+        font-size: 2rem;
+    }
+
+    .quote-cursor {
+        height: 3rem;
+        margin-bottom: 12px;
+    }
+
+    .quote-message {
+        font-size: 3rem;
+    }
+}

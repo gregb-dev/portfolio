@@ -1,0 +1,62 @@
+.heading {
+    text-align: left;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.subheading {
+    text-align: left;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Fallback for older browsers using Flexbox */
+.projects-layout {
+    display: -webkit-box;
+    /* Older WebKit browsers */
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projects-layout>div {
+    -webkit-box-flex: 1;
+    /* Older WebKit browsers */
+    -ms-flex: 1 1 calc(100% / 3 - 1rem);
+    /* IE10 */
+    flex: 1 1 calc(100% / 3 - 1rem);
+    min-width: 287px;
+}
+
+/* Modern Grid Layout if supported */
+@supports (display: grid) {
+    .projects-layout {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
+    }
+}
+
+.project-card-container {
+    min-width: 287px;
+    width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+    .projects-layout>div {
+        /* Older WebKit browsers */
+        -ms-flex: 1 1 calc(100% / 3 - 2rem);
+        /* IE10 */
+        flex: 1 1 calc(100% / 3 - 2rem);
+    }
+
+    .projects-layout {
+        gap: 2rem;
+    }
+}

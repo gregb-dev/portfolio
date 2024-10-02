@@ -1,8 +1,6 @@
 import './Welcome.css';
-import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import GBLogo from '../../../assets/logos/gb-logo.png';
-import Socials from '../../menus/socials/Socials';
+import ArrowBlinkingButton from '../../buttons/arrow/ArrowBlinkingButton';
 
 function Welcome() {
 
@@ -10,17 +8,23 @@ function Welcome() {
 
     return (
         <>
-            <div id="welcome">
-                <div className="container-welcome-details">
-                    {/*<div className='container-welcome-logo'><img src={GBLogo} alt="Greg Berthold logo" /></div>*/}
-                    <h1 className='welcome-name'>{t('name')} {t('familyName')}</h1>
-                    <p>{t('welcomeMessage1')}</p>
-                    <p>{t('welcomeMessage2')}</p>
-                    <Socials />
+            <div id='welcome'>
+                <div className='content welcome-container'>
+                    <div className='site-width'>
+                        <div className='welcome-card'>
+                            <h1 className='welcome-card-heading'>
+                                {t('welcomeHeading.part1')} <span className='welcome-card-heading-bold'>{t('welcomeHeading.part2')}</span> — {t('welcomeHeading.part3')}
+                                <br /> {t('welcomeHeading.part4')}
+                            </h1>
+                        </div>
+                        <div className='welcome-arrow-down'>
+                            <ArrowBlinkingButton hashtagLink='/#quote' directionDown={true} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
     )
-}
+};
 
 export default Welcome;

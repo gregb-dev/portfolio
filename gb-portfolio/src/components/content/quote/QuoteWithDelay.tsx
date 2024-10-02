@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import './QuoteWithDelay.css';
+import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import './Quote.css';
 
 function QuoteWithDelay() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
     const [firstText, setFirstText] = useState('');
     const [secondText, setSecondText] = useState('');
     const [index, setIndex] = useState(0);
@@ -14,19 +15,33 @@ function QuoteWithDelay() {
     const [startTyping, setStartTyping] = useState(false);
     const textContainerRef = useRef(null);
 
-    const firstTextContent = t('quote.part1'); // First piece of text
-    const secondTextContent = t('quote.part2'); // Second piece of text
-    const speed = 90; // Speed in milliseconds
+    const firstTextContent = t('quote.part1');
+    const secondTextContent = t('quote.part2');
+
+    const typingSpeed = 90; // in milliseconds
     const delayBetweenTexts = 1000; // 1 second delay between texts
 
-    const initialDelay = 2000; // Initial delay before typing starts
+    const initialDelay = 1000; // Initial delay before typing starts
 
-    // Set up IntersectionObserver to trigger typing effect on scroll
+    // Function to reset the typing animation
+    const resetTyping = () => {
+        setFirstText('');
+        setSecondText('');
+        setIndex(0);
+        setSecondIndex(0);
+        setStartTyping(false);
+        setFadeIn(false);
+    };
+
+    // Reset typing animation when the locale changes
     useEffect(() => {
+        resetTyping();
+
+        // IntersectionObserver setup to trigger typing effect on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    setFadeIn(true); // Trigger fade-in effect
+                    setFadeIn(true);
                     setTimeout(() => {
                         setStartTyping(true);
                     }, initialDelay); // Start typing after initial delay
@@ -44,7 +59,7 @@ function QuoteWithDelay() {
                 observer.unobserve(textContainerRef.current);
             }
         };
-    }, []);
+    }, [i18n.language]); // Dependency on language change
 
     // First text typing effect
     useEffect(() => {
@@ -52,7 +67,7 @@ function QuoteWithDelay() {
             const timeoutId = setTimeout(() => {
                 setFirstText(prev => prev + firstTextContent.charAt(index));
                 setIndex(index + 1);
-            }, speed);
+            }, typingSpeed);
 
             return () => clearTimeout(timeoutId);
         }
@@ -73,30 +88,44 @@ function QuoteWithDelay() {
             const timeoutId = setTimeout(() => {
                 setSecondText(prev => prev + secondTextContent.charAt(secondIndex - 1));
                 setSecondIndex(secondIndex + 1);
-            }, speed);
+            }, typingSpeed);
 
             return () => clearTimeout(timeoutId);
         }
     }, [index, secondIndex, secondTextContent, firstTextContent.length, delayBetweenTexts]);
 
     return (
-        <div id="quote">
-            <div ref={textContainerRef} className={`text-container ${fadeIn ? 'fade-in' : ''}`}>
-                <h1 className="typewriter">
-                    {firstText}
-                    {index === firstTextContent.length && secondIndex > 0 ? (
-                        <>
-                            <br /> {/* Line break after first text */}
-                            {secondText}
-                        </>
-                    ) : null}
-                    <span className="cursor"></span>
-                </h1>
+        <>
+            <div id='quote'>
+                <div className='content quote-container'>
+                    <div className='quote site-width'>
+                        <p className='quote-date'>2024</p>
+                        <div className='quote-code-snippet'>
+                            <p className='quote-blockquote'>
+                                <span className='quote-brackets'>{`<`}</span>blockquote<span className='quote-brackets'>{`>`}</span>
+                            </p>
+                            <div ref={textContainerRef} className={`quote-message-wrapper ${fadeIn ? 'fade-in' : ''}`}>
+                                <h1 className='quote-message'>
+                                    {firstText}
+                                    {index === firstTextContent.length && secondIndex > 0 ? (
+                                        <>
+                                            <br /> {/* Line break after first text */}
+                                            {secondText}
+                                        </>
+                                    ) : null}
+                                    <span className='quote-cursor'></span>
+                                </h1>
+                            </div>
+                            <p className='quote-blockquote'>
+                                <span className='quote-brackets'>{`</`}</span>blockquote<span className='quote-brackets'>{`>`}</span>
+                            </p>
+                        </div>
+                        <p className='quote-author'>— GREG</p>
+                    </div>
+                </div>
             </div>
-
-        </div>
+        </>
     );
-}
-
+};
 
 export default QuoteWithDelay;

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -11,34 +12,31 @@
 
 .welcome-socials li {
     list-style: none;
+}
+
+.welcome-socials-icon {
+    width: auto;
+    height: 100%;
+    max-width: 100px;
     margin: 0 1rem;
 }
 
-.welcome-socials li a {
-    display: block;
-    width: 100%;
-    height: 100%;
+.welcome-socials-icon-small {
+    width: auto;
+    height: 24px;
 }
 
-.welcome-socials-icons {
-    display: block;
-    width: 44px;
-    height: 44px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
+.welcome-socials-icon-medium {
+    width: auto;
+    height: 36px;
 }
 
-.icon-email {
-    width: 52px;
-    background-image: url(../../../assets/logos/google-mail-icon-black.png);
+.welcome-socials-icon-large {
+    width: auto;
+    height: 48px;
 }
 
-.icon-github {
-    background-image: url(../../../assets/logos/github-mark-black.png);
-}
-
-.icon-linkedin {
-    background-image: url(../../../assets/logos/linkedin-black.png);
+.welcome-socials-icon-default {
+    width: auto;
+    height: 60px;
 }

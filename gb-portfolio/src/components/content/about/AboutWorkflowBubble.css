@@ -1,0 +1,43 @@
+.about-workflow-bubble {
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -moz-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -o-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.about-workflow-bubble-seperator {
+    margin: 0.5rem auto;
+    width: 1px;
+    height: 32px;
+    background-color: var(--gray);
+}
+
+.about-workflow-bubble h2 {
+    color: var(--accent-color);
+}
+
+.about-workflow-bubble-img-container {
+    margin-top: 1.5rem;
+    object-fit: contain;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #f2f2f2;
+}
+
+.about-workflow-bubble img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}

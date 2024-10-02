@@ -1,14 +1,20 @@
-#welcome {
+.welcome-container {
+    /* remove height of header */
+    width: 100%;
+    height: -webkit-calc(100vh - 85px);
+    height: -moz-calc(100vh - 85px);
+    height: -o-calc(100vh - 85px);
+    height: calc(100vh - 85px);
     background-color: var(--site-background);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    /*min-height: 100vh;*/
 }
 
-.container-welcome-details {
+.welcome-card {
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -17,25 +23,41 @@
     text-align: center;
 }
 
-.welcome-name {
-    text-transform: uppercase;
-    text-transform: capitalize;
-    font-size: 2rem;
+.welcome-card-heading {
+    font-family: "Urbanist-Regular", sans-serif;
+    text-align: left;
 }
 
-.welcome-title {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 1rem;
+.welcome-card-heading-bold {
+    font-family: "Urbanist-Semibold";
+    color: var(--accent-color);
 }
 
-.container-welcome-logo {
-    width: 60px;
-    height: auto;
-    display: block;
+.welcome-arrow-down {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
 }
 
-.container-welcome-logo img {
-    width: 100%;
-    height: auto;
+.welcome-arrow-down:hover {
+    opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .welcome-card-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome-card-heading {
+        font-size: 3rem;
+    }
 }

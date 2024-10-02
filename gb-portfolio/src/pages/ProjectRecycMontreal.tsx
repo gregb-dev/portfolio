@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 
 function ProjectRecycMontreal() {
 
-    const { t } = useTranslation();
+    //const { t } = useTranslation();
 
     return (
         <>
@@ -11,6 +11,6 @@ function ProjectRecycMontreal() {
             </div>
         </>
     )
-}
+};
 
 export default ProjectRecycMontreal;
