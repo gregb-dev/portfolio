@@ -11,7 +11,6 @@ import IterationImage from '../../../assets/images/workflow/shapes.png';
 import DesignImage from '../../../assets/images/workflow/mobile.png';
 import OptimizationImage from '../../../assets/images/workflow/optimization.png';
 
-
 function AboutBanner() {
 
     const { t } = useTranslation();
@@ -21,8 +20,8 @@ function AboutBanner() {
             <div className='content about-description-container'>
                 <div className='about-description site-width'>
                     <div className='about-description-profile'>
-                        <div className='about-description-pfp-container'>
-                        </div>
+                        {/*<div className='about-description-pfp-container'>
+                        </div>*/}
                         <div className='about-description-text'>
                             <h1>{t('aboutMe.bioHeading')}</h1>
                             <p>{t('aboutMe.bio')}</p>
