@@ -19,13 +19,13 @@ import ScrollToTop from './hooks/ScrollToTop';
 function App() {
 
     // Production variable
-    const isProduction = import.meta.env.VITE_APP_ENV === 'production';
+    const isSiteDown = import.meta.env.VITE_APP_ENV === 'sitedown';
 
     return (
         <>
             <Router>
                 <ScrollToTop />
-                {isProduction ? (
+                {isSiteDown ? (
                     <Routes>
                         <Route path='*' element={<SiteDown />} />
                     </Routes>
