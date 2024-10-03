@@ -23,12 +23,12 @@ function AboutBanner() {
                         {/*<div className='about-description-pfp-container'>
                         </div>*/}
                         <div className='about-description-text'>
-                            <h1>{t('aboutMe.bioHeading')}</h1>
+                            <h1 className='about-description-subheading'>{t('aboutMe.bioHeading')}</h1>
                             <p>{t('aboutMe.bio')}</p>
                         </div>
                     </div>
                     <div className='about-about-description-workflow'>
-                        <h1>{t('aboutMe.workflowHeading')}</h1>
+                        <h2 className='about-description-subheading'>{t('aboutMe.workflowHeading')}</h2>
                         <p>{t('aboutMe.workflowText')}</p>
                         <div className='about-about-description-workflow-chart'>
                             <ul>
