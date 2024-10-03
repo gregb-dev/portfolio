@@ -28,6 +28,7 @@ function Work() {
                                     href={t('projectCardRecycMontreal.href')}
                                     case='mobile'
                                     isProtected={true}
+                                    externalLink={{url:'https://recycmontreal.ca', name:'www.recycmontreal.ca'}}
                                 />
                             </div>
                             <div className='project-card-container'>
