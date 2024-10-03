@@ -31,9 +31,17 @@
     background-position: center center;
 }
 
-
 .about-description-text {
     text-align: left;
+}
+
+.about-description-heading {
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.about-description-subheading {
+    text-transform: uppercase;
 }
 
 .about-about-description-workflow {

@@ -23,7 +23,12 @@
 }
 
 .about-workflow-bubble h2 {
+    text-transform: uppercase;
     color: var(--accent-color);
+}
+
+.about-workflow-bubble h3 {
+    text-transform: uppercase;
 }
 
 .about-workflow-bubble-img-container {
