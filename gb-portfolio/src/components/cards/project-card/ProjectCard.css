@@ -171,3 +171,7 @@
     font-family: "Urbanist-Semibold";
     margin-top: 0.5rem;
 }
+
+.project-card-external-link {
+    color: var(--accent-color) !important;
+}

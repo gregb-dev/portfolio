@@ -12,6 +12,10 @@ interface ProjectCardProps {
     href: string
     case: string
     isProtected: boolean
+    externalLink?: {
+        url: string,
+        name: string
+    }
 }
 
 function ProjectCard(props: ProjectCardProps) {
@@ -50,7 +54,19 @@ function ProjectCard(props: ProjectCardProps) {
                     </Link>
                     <p className='project-card-type'>{props.type}</p>
                     <p className='project-card-description'>{props.description}</p>
-                    <p className={`warning-message${isProtected}`}>{t('projectWarning')}</p>
+                    <p className={`warning-message${isProtected}`}>{t('projectWarning')}
+                        {
+                            props.externalLink && (
+                                <>
+                                    <span>{t('externalLinkMessage')}
+                                        <a className='project-card-external-link' href={props.externalLink.url} target='_blank' rel='external noopener noreferrer'>
+                                            {props.externalLink.name}
+                                        </a>.
+                                    </span>
+                                </>
+                            )
+                        }
+                    </p>
                 </div>
             </div>
         </>
