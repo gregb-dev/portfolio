@@ -9,7 +9,7 @@ function About() {
             <div id='about'>
                 <AboutBanner />
                 <AboutDescription />
-                <Contact showFunFact={false} />
+                <Contact showFunFact={true} />
             </div>
         </>
     )
