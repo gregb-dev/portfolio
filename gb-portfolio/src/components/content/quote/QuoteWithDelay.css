@@ -24,12 +24,15 @@
     color: var(--white);
 }
 
-.quote-date {
+.quote-codeblock-icon {
     width: 100%;
     height: auto;
     text-align: left;
-    font-size: 1.5rem;
-    color: var(--gray);
+}
+
+.quote-codeblock-icon img {
+    width: 40px;
+    height: auto;
 }
 
 .quote-author {
@@ -114,8 +117,12 @@
         font-size: 1.5rem;
     }
 
-    .quote-author,
-    .quote-date {
+    .quote-codeblock-icon img {
+        width: 44px;
+        height: auto;
+    }
+
+    .quote-author {
         font-size: 2rem;
     }
 
@@ -134,8 +141,12 @@
         font-size: 1.75rem;
     }
 
-    .quote-author,
-    .quote-date {
+    .quote-codeblock-icon img {
+        width: 48px;
+        height: auto;
+    }
+
+    .quote-author {
         font-size: 2rem;
     }
 

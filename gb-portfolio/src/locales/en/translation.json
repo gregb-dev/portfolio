@@ -16,7 +16,7 @@
     "welcomeHeading": {
         "part1": "Hi! I'm ",
         "part2": "Greg",
-        "part3": "a",
+        "part3": ", a ",
         "part4": "full-stack developer who loves to create engaging and innovative experiences for brands and their customers."
     },
     "quote": {
@@ -25,7 +25,7 @@
     },
     "headings": {
         "work": "My work",
-        "workSubheading": "Latest projects",
+        "workSubheading": "Some projects I have done",
         "contact": "Contact",
         "contactSubheading": "Let's connect."
     },
