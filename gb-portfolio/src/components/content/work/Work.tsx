@@ -15,7 +15,7 @@ function Work() {
                 <div className='content work-container'>
                     <div className='site-width'>
                         <h1 className='heading'>{t('headings.work')}</h1>
-                        <h2 className='subheading'>{t('headings.workSubheading')}</h2>
+                        {/*<h2 className='subheading'>{t('headings.workSubheading')}</h2>*/}
                         <div className='projects-layout'>
                             <div className='project-card-container'>
                                 <ProjectCard
