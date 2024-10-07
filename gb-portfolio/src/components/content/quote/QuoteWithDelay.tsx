@@ -1,6 +1,7 @@
 import './QuoteWithDelay.css';
 import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import CodeBlockImage from '../../../assets/icons/code-block.png';
 
 function QuoteWithDelay() {
     const { t, i18n } = useTranslation();
@@ -99,7 +100,7 @@ function QuoteWithDelay() {
             <div id='quote'>
                 <div className='content quote-container'>
                     <div className='quote site-width'>
-                        <p className='quote-date'>2024</p>
+                        <p className='quote-codeblock-icon'><img src={CodeBlockImage} alt=''/></p>
                         <div className='quote-code-snippet'>
                             <p className='quote-blockquote'>
                                 <span className='quote-brackets'>{`<`}</span>blockquote<span className='quote-brackets'>{`>`}</span>
