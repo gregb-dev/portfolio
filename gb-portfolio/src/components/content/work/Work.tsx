@@ -40,7 +40,7 @@ function Work() {
                                     imageAlt={t('projectCardEcoleEnFolie.imageAlt')}
                                     href={t('projectCardEcoleEnFolie.href')}
                                     case='web'
-                                    isProtected={true}
+                                    isProtected={false}
                                 />
                             </div>
                         </div>

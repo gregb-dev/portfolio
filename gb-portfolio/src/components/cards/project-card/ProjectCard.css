@@ -172,6 +172,10 @@
     margin-top: 0.5rem;
 }
 
+.hide-warning {
+    display: none;
+}
+
 .project-card-external-link {
     color: var(--accent-color) !important;
 }
