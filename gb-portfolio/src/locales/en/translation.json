@@ -46,10 +46,13 @@
     },
     "projectCardEcoleEnFolie": {
         "name": "École en folie",
+        "tag": "",
         "type": "Web, UI Design",
         "description": "A subscription-based service allowing access to a bank of French and Math exercies for elementary education.",
         "imageAlt": "Laptop preview",
-        "href": "/project-ecoleenfolie"
+        "href": "/project-ecoleenfolie",
+        "role": "Full-Stack Developer",
+        "timeline": "August 2015 - September 2020"
     },
     "footerLabels": {
         "navigation": "Site",

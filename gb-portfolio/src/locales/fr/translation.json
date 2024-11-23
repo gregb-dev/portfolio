@@ -46,10 +46,13 @@
     },
     "projectCardEcoleEnFolie": {
         "name": "École en folie",
+        "tag": "",
         "type": "Web, UI Design",
         "description": "Un service d'abonnement donnant accès à une banque d'exercices de français et de mathématiques pour l'enseignement primaire.",
         "imageAlt": "Aperçu sur ordinateur portable",
-        "href": "/project-ecoleenfolie"
+        "href": "/project-ecoleenfolie",
+        "role": "Développeur Full-Stack",
+        "timeline": "Août 2015 - Septembre 2020"
     },
     "footerLabels": {
         "navigation": "Site",
