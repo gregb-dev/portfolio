@@ -37,6 +37,11 @@
         "label": "*** Le saviez-vous? ***",
         "message": "J'ai créé ce portfolio avec React, Vite et TypeScript. Vous pouvez trouver le projet sur ma page GitHub."
     },
+    "projectHeaderLabels": {
+        "overview": "Description",
+        "role": "Rôle",
+        "timeline": "Échéancier"
+    },
     "projectCardRecycMontreal": {
         "name": "Recyc-Montréal",
         "type": "Mobile, UX/UI Design",
