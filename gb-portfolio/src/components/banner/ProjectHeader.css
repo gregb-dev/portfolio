@@ -1,7 +1,14 @@
 .project-header {
-    background-color: #226ce0;
-    color: white;
+    background: rgb(34, 108, 224);
+    background: -moz-linear-gradient(0deg, rgba(34, 108, 224, 1) 0%, rgba(26, 83, 173, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34, 108, 224, 1) 0%, rgba(26, 83, 173, 1) 100%);
+    background: linear-gradient(0deg, rgba(34, 108, 224, 1) 0%, rgba(26, 83, 173, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#226ce0", endColorstr="#1a53ad", GradientType=1);
+    color: var(--primary-color);
     width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,12 +17,21 @@
     align-content: center;
 }
 
+.project-header h1 {
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    font-family: Urbanist-Medium;
+}
+
 .project-header h3 {
+    margin-top: 1rem;
     margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px var(--accent-color-dark);
+    font-size: 1rem;
 }
 
 .project-header li {
-    margin-bottom: 1rem;
     list-style: none;
 }
 

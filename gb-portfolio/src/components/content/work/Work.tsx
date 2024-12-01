@@ -1,9 +1,9 @@
 import './Work.css';
 import { useTranslation } from 'react-i18next';
 import ProjectCard from '../../cards/project-card/ProjectCard';
-import RecycMontrealMockup01 from '../../../assets/images/project-recycmontreal/iphone16-mock01.png';
-import RecycMontrealMockup02 from '../../../assets/images/project-recycmontreal/iphone16-mock02.png';
-import EcoleEnFolieMockup from '../../../assets/images/project-ecoleenfolie/macbook-mock.png';
+import RecycMontrealMockup01 from '../../../assets/images/project-recycmontreal/iphone16-mock01-recycmontreal.png';
+import RecycMontrealMockup02 from '../../../assets/images/project-recycmontreal/iphone16-mock02-recycmontreal.png';
+import EcoleEnFolieMockup from '../../../assets/images/project-ecoleenfolie/macbook-mock-ecoleenfolie.png';
 
 function Work() {
 

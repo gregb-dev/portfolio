@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ProjectHeader from "../components/banner/ProjectHeader";
-import EcoleEnFolieMockup from '../assets/images/project-ecoleenfolie/macbook-mock.png';
+import EcoleEnFolieMockup from '../assets/images/project-ecoleenfolie/macbook-mock-ecoleenfolie.png';
 
 function ProjectEcoleEnFolie() {
 

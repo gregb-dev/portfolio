@@ -25,7 +25,7 @@ function ProjectHeader(props: ProjectHeaderProps) {
                     {props.tag && (<h2>{props.tag}</h2>)}
                     <ul>
                         <li>
-                            <h3>{t('projectHeaderLabels.overview')}</h3>
+                            {/*<h3>{t('projectHeaderLabels.overview')}</h3>*/}
                             <p>{props.description}</p>
                         </li>
                         <li>
