@@ -1,0 +1,20 @@
+.project-separator ul {
+    padding-inline: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.project-separator ul li {
+    padding: 1rem 0;
+    margin-right: 0.5rem;
+    list-style: none;
+    color: var(--primary-color);
+}
+
+.project-separator-heading {
+    margin: 0;
+}
